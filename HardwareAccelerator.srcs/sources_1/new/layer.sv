@@ -26,6 +26,9 @@ module layer#(
     parameter INPUTS_I = 784, //784, 256, 256
     parameter WIDTH_O = 256, //for each layer the output width changes
 
+    //for Layer 3
+    parameter ARGMAX = 0, //for layer 3 0-9 argmax. But not on layer 1-2.
+
     //Files
     parameter WEIGHT_FILE = "layer1_weights.mem",
     parameter THRESH_FILE = "layer1_thresh.mem"
@@ -35,6 +38,7 @@ module layer#(
     input logic clk, rst, start,
     input logic [INPUTS_I - 1: 0] input_bits,
 
+    output logic [$clog2(WIDTH_O)-1:0] digit, //ideally at layer 3, 10 neurons, digits 0-9.
     output logic [WIDTH_O - 1: 0] output_bits,
     output logic done
 );
@@ -57,10 +61,11 @@ logic [COUNT_W-1:0]      threshold [WIDTH_O];
 logic [NEURON_W-1:0]     count_neurons;
 logic [CHUNK_W-1:0]      curr_chunk;
 logic [ADDR_W-1:0]       addr;
+logic [COUNT_W - 1:0]    best_count; //for layer 3
 logic last_neuron, last_chunk, enable_delay, clear;
 
 //Weights
-initial $readmemh(THRESH_FILE, threshold);
+initial if (!ARGMAX) $readmemh(THRESH_FILE, threshold); //layer 3 no thresh.
 
 assign addr = count_neurons * CHUNKS + curr_chunk;
 
@@ -121,13 +126,23 @@ always_ff @(posedge clk) begin
             LOAD: begin
                 input_reg <= input_bits;
                 count_neurons <= 1'b0;
+                best_count <= 0;
+                digit <= 0;
             end 
             CLEAR: curr_chunk <= 0;
             RUN: curr_chunk <= curr_chunk + 1;
             WAIT: ;
             CHECK: begin
-                //at that neuron agree or disagree for every neuron in a layer
-                output_bits[count_neurons] <= (count_t >= threshold[count_neurons]);
+                if (ARGMAX) begin
+                    if (count_t > best_count) begin
+                        best_count <= count_t; //new count
+                        digit <= count_neurons; //and the neuron were on currnetly is the best now.
+                    end
+                end else begin
+                    //at that neuron agree or disagree for every neuron in a layer
+                    output_bits[count_neurons] <= (count_t >= threshold[count_neurons]);
+                end
+
                 if (last_neuron) done <= 1'b1;
                 else count_neurons <= count_neurons + 1;
             end
