@@ -68,7 +68,5 @@ layer #(.INPUTS_I(256), .WIDTH_O(256), .WEIGHT_FILE("layer2_weights.mem"), .THRE
 layer #(.INPUTS_I(256), .WIDTH_O(10), .WEIGHT_FILE("layer3_weights.mem"),.ARGMAX(1)) L3 (
     .clk(clk), .rst(reset), .start(layer2_done), .input_bits(layer2_output), .output_bits(), .digit(digit), .done(layer3_done));   
 
-
-
 assign led = digit;
 endmodule
