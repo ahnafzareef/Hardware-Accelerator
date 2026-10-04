@@ -25,7 +25,10 @@ module layer#(
     parameter CHUNK = 64, //how big one chunk is
     parameter INPUTS_I = 784, //784, 256, 256
     parameter WIDTH_O = 256, //for each layer the output width changes
-    localparam CHUNKS = (INPUTS_I + CHUNK -1) / CHUNK //how many chunks so 784 is 12
+
+    //Files
+    parameter WEIGHT_FILE = "layer1_weights.mem",
+    parameter THRESH_FILE = "layer1_thresh.mem"
 
 )(
 
@@ -36,27 +39,42 @@ module layer#(
     output logic done
 );
 
-logic [CHUNKS*CHUNK-1:0] input_reg; 
+//vars 
+localparam CHUNKS   = (INPUTS_I + CHUNK - 1) / CHUNK;  
+localparam DEPTH    = WIDTH_O * CHUNKS;                // BRAM rows
+localparam COUNT_W  = $clog2(INPUTS_I + 1);            // total count
+localparam NEURON_W = $clog2(WIDTH_O);                 // neuron counter
+localparam CHUNK_W  = $clog2(CHUNKS);                  // chunk counter
+localparam ADDR_W   = $clog2(DEPTH);                   // BRAM address
+
+
+// SIGNAL WIRES
+logic [CHUNKS*CHUNK-1:0] input_reg;
+logic [CHUNK-1:0]        input_chunk_d;   // delayed input chunk
+logic [CHUNK-1:0]        weights_chunk;   // from BRAM
+logic [COUNT_W-1:0]      count_t;
+logic [COUNT_W-1:0]      threshold [WIDTH_O];
+logic [NEURON_W-1:0]     count_neurons;
+logic [CHUNK_W-1:0]      curr_chunk;
+logic [ADDR_W-1:0]       addr;
 logic last_neuron, last_chunk, enable_delay, clear;
 
+//Weights
+initial $readmemh(THRESH_FILE, threshold);
 
-logic [$clog2(INPUTS_I+1)-1: 0] count_t; //total neuron agreement count aggregate from the neuron module;
-logic [$clog2(INPUTS_I + 1) -1:0] threshold [WIDTH_O - 1:0];
-logic [$clog2(WIDTH_O)-1: 0] count_neurons;
-logic [$clog2(CHUNKS)-1:0] curr_chunk;
-logic [CHUNK-1:0] input_reg_chunk_delay;
+assign addr = count_neurons * CHUNKS + curr_chunk;
 
+weight_mem #(.WIDTH(CHUNK), .DEPTH(DEPTH), .FILE(WEIGHT_FILE)) wmem (
+    .clk(clk), .addr(addr), .data(weights_chunk)
+);
 
-logic [$clog2((WIDTH_O * CHUNKS)) - 1 : 0] addr;
-neuron #(.CHUNK(CHUNK), .COUNTWIDTH($clog2(INPUTS_I))) neuron_n (.in(input_reg_chunk_delay), .weights(), .clk(clk), .clear(clear), .en(enable_delay), .count(count_t));
+neuron #(.CHUNK(CHUNK), .COUNTWIDTH(COUNT_W)) neuron_n (
+    .clk(clk), .clear(clear), .en(enable_delay),
+    .in(input_chunk_d), .weights(weights_chunk), .count(count_t)
+);
 
-
-typedef enum logic [2:0] {
-
-    IDLE, LOAD, CLEAR, RUN, WAIT, CHECK
-
-} state_t;
-
+//State machine logic
+typedef enum logic [2:0] { IDLE, LOAD, CLEAR, RUN, WAIT, CHECK } state_t;
 state_t current_state, next_state;
 
 assign last_neuron = (count_neurons == WIDTH_O-1);
@@ -64,72 +82,59 @@ assign clear  = (current_state == CLEAR);
 assign last_chunk = (curr_chunk == CHUNKS - 1);
 
 always_ff @(posedge clk) begin
-    if (rst) begin
-        current_state <= IDLE;
-    end
-    else
-        current_state <= next_state;
+    if (rst) current_state <= IDLE;
+    else current_state <= next_state;
 end
 
 always_comb begin
     next_state = current_state;
     case (current_state) 
-        IDLE: 
-            if (start) next_state <= LOAD;
-        LOAD:
-            next_state = CLEAR;
-        CLEAR:
-            next_state = RUN;
-        RUN: begin
-            if (last_chunk)
-                next_state = WAIT;
-        end 
-        WAIT:
-            //waits 1 clk cycle
-            next_state = CHECK;
+        IDLE: if (start) next_state = LOAD;
+        LOAD: next_state = CLEAR;
+        CLEAR: next_state = RUN;
+        RUN: if (last_chunk) next_state = WAIT;
+        WAIT: next_state = CHECK;
         CHECK: begin
             if(last_neuron)
                 next_state = IDLE;
             else
                 next_state = CLEAR;
         end
+        default: next_state = IDLE;
     endcase 
 end
 
-
+//Delaying input reg and also enable because BRAM is clocked 1 cycle.
 always_ff @(posedge clk) begin
-
     enable_delay <= (current_state == RUN);
-    input_reg_chunk_delay <= (input_reg[curr_chunk*CHUNK+: CHUNK]);
-
+    input_chunk_d <= input_reg[curr_chunk*CHUNK +: CHUNK];
 end
+
 always_ff @(posedge clk) begin
-
-    case (current_state) 
-        IDLE:
-            //DO NOTHING OR MAKE IT RESET, BUT CLEAR SHOULD DO THAT 
-            done <= 1'b0;
-        LOAD: begin
-            input_reg <= input_bits;
-            count_neurons <= 1'b0;
-        end 
-        CLEAR:
-            curr_chunk <= 0;
-        RUN:
-            curr_chunk <= curr_chunk + 1;
-        WAIT:
-            ;
-        CHECK: begin
-            //at that neuron agree or disagree for every neuron in a layer
-            output_bits[count_neurons] <= (count_t >= threshold[count_neurons]);
-            
-            if (last_neuron)
-                done <= 1'b1;
-            else
-                count_neurons <= count_neurons + 1;
-        end
-        default: ;
-    endcase
-
+    if (rst) begin
+        count_neurons <= 1'b0;
+        curr_chunk <= 1'b0;
+        done <= 1'b0;
+    end else begin
+        case (current_state) 
+            IDLE: done <= 1'b0;
+            LOAD: begin
+                input_reg <= input_bits;
+                count_neurons <= 1'b0;
+            end 
+            CLEAR: curr_chunk <= 0;
+            RUN: curr_chunk <= curr_chunk + 1;
+            WAIT: ;
+            CHECK: begin
+                //at that neuron agree or disagree for every neuron in a layer
+                output_bits[count_neurons] <= (count_t >= threshold[count_neurons]);
+                if (last_neuron) done <= 1'b1;
+                else count_neurons <= count_neurons + 1;
+            end
+            default: ;
+        endcase
+    end
 end
+
 endmodule
+
