@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7s25csga324-1" LaunchTime="1791122380">
+<GenRun Id="synth_1" LaunchPart="xc7s25csga324-1" LaunchTime="1791122946">
   <File Type="PA-TCL" Name="bnn_top.tcl"/>
   <File Type="REPORTS-TCL" Name="bnn_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="bnn_top.vds"/>

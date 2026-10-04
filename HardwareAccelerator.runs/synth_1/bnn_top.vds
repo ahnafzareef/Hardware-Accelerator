@@ -4,8 +4,8 @@ INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detect
 # SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
 # IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
 # SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
-# Start of session at: Sun Oct  4 09:59:42 2026
-# Process ID         : 30040
+# Start of session at: Sun Oct  4 10:09:08 2026
+# Process ID         : 37512
 # Current directory  : C:/Projects/HardwareAccelerator/HardwareAccelerator.runs/synth_1
 # Command line       : vivado.exe -log bnn_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bnn_top.tcl
 # Log file           : C:/Projects/HardwareAccelerator/HardwareAccelerator.runs/synth_1/bnn_top.vds
@@ -18,7 +18,369 @@ INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detect
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
 # Host memory        : 16438 MB
-# Swap memory        : 21628 MB
-# Total Virtual      : 38066 MB
-# Available Virtual  : 2754 MB
+# Swap memory        : 22709 MB
+# Total Virtual      : 39147 MB
+# Available Virtual  : 4750 MB
 #-----------------------------------------------------------
+source bnn_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 630.926 ; gain = 305.895
+Command: synth_design -top bnn_top -part xc7s25csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7s25'
+INFO: [Device 21-403] Loading part xc7s25csga324-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 35296
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1362.355 ; gain = 577.105
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bnn_top' [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/bnn_top.sv:24]
+INFO: [Synth 8-3876] $readmem data file 'test_image.mem' is read successfully [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/bnn_top.sv:31]
+INFO: [Synth 8-6157] synthesizing module 'layer' [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/layer.sv:23]
+	Parameter INPUTS_I bound to: 784 - type: integer 
+	Parameter WIDTH_O bound to: 256 - type: integer 
+	Parameter WEIGHT_FILE bound to: layer1_weights.mem - type: string 
+	Parameter THRESH_FILE bound to: layer1_thresh.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'layer1_thresh.mem' is read successfully [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/layer.sv:68]
+INFO: [Synth 8-6157] synthesizing module 'weight_mem' [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/weight_mem.sv:22]
+	Parameter WIDTH bound to: 64 - type: integer 
+	Parameter DEPTH bound to: 3328 - type: integer 
+	Parameter FILE bound to: layer1_weights.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'layer1_weights.mem' is read successfully [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/weight_mem.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'weight_mem' (0#1) [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/weight_mem.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'neuron' [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/neuron.sv:23]
+	Parameter CHUNK bound to: 64 - type: integer 
+	Parameter COUNTWIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'neuron' (0#1) [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/neuron.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'layer' (0#1) [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/layer.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'layer__parameterized0' [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/layer.sv:23]
+	Parameter INPUTS_I bound to: 256 - type: integer 
+	Parameter WIDTH_O bound to: 256 - type: integer 
+	Parameter WEIGHT_FILE bound to: layer2_weights.mem - type: string 
+	Parameter THRESH_FILE bound to: layer2_thresh.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'layer2_thresh.mem' is read successfully [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/layer.sv:68]
+INFO: [Synth 8-6157] synthesizing module 'weight_mem__parameterized0' [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/weight_mem.sv:22]
+	Parameter WIDTH bound to: 64 - type: integer 
+	Parameter DEPTH bound to: 1024 - type: integer 
+	Parameter FILE bound to: layer2_weights.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'layer2_weights.mem' is read successfully [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/weight_mem.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'weight_mem__parameterized0' (0#1) [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/weight_mem.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized0' [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/neuron.sv:23]
+	Parameter CHUNK bound to: 64 - type: integer 
+	Parameter COUNTWIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized0' (0#1) [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/neuron.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'layer__parameterized0' (0#1) [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/layer.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'layer__parameterized1' [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/layer.sv:23]
+	Parameter INPUTS_I bound to: 256 - type: integer 
+	Parameter WIDTH_O bound to: 10 - type: integer 
+	Parameter ARGMAX bound to: 1 - type: integer 
+	Parameter WEIGHT_FILE bound to: layer3_weights.mem - type: string 
+INFO: [Synth 8-6157] synthesizing module 'weight_mem__parameterized1' [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/weight_mem.sv:22]
+	Parameter WIDTH bound to: 64 - type: integer 
+	Parameter DEPTH bound to: 40 - type: integer 
+	Parameter FILE bound to: layer3_weights.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'layer3_weights.mem' is read successfully [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/weight_mem.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'weight_mem__parameterized1' (0#1) [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/weight_mem.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'layer__parameterized1' (0#1) [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/layer.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_top' (0#1) [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/bnn_top.sv:24]
+WARNING: [Synth 8-6014] Unused sequential element best_count_reg was removed.  [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/layer.sv:129]
+WARNING: [Synth 8-6014] Unused sequential element best_count_reg was removed.  [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/layer.sv:129]
+WARNING: [Synth 8-3848] Net output_bits in module/entity layer__parameterized1 does not have driver. [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/sources_1/new/layer.sv:42]
+WARNING: [Synth 8-7129] Port output_bits[9] in module layer__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port output_bits[8] in module layer__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port output_bits[7] in module layer__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port output_bits[6] in module layer__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port output_bits[5] in module layer__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port output_bits[4] in module layer__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port output_bits[3] in module layer__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port output_bits[2] in module layer__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port output_bits[1] in module layer__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port output_bits[0] in module layer__parameterized1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1495.645 ; gain = 710.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1495.645 ; gain = 710.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1495.645 ; gain = 710.395
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1495.645 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/constrs_1/imports/Spartan7/Arty-S7-25-Master.xdc]
+Finished Parsing XDC File [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/constrs_1/imports/Spartan7/Arty-S7-25-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Projects/HardwareAccelerator/HardwareAccelerator.srcs/constrs_1/imports/Spartan7/Arty-S7-25-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bnn_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bnn_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1558.715 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1560.375 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1560.375 ; gain = 775.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s25csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1560.375 ; gain = 775.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1560.375 ; gain = 775.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'layer'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'layer__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'layer__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                    LOAD |                              001 |                              001
+                   CLEAR |                              010 |                              010
+                     RUN |                              011 |                              011
+                    WAIT |                              100 |                              100
+                   CHECK |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'layer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                    LOAD |                              001 |                              001
+                   CLEAR |                              010 |                              010
+                     RUN |                              011 |                              011
+                    WAIT |                              100 |                              100
+                   CHECK |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'layer__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                    LOAD |                              001 |                              001
+                   CLEAR |                              010 |                              010
+                     RUN |                              011 |                              011
+                    WAIT |                              100 |                              100
+                   CHECK |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'layer__parameterized1'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1560.375 ; gain = 775.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 2     
+	  64 Input    7 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input     64 Bit         XORs := 3     
++---Registers : 
+	              784 Bit    Registers := 1     
+	              256 Bit    Registers := 4     
+	               64 Bit    Registers := 6     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 8     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---ROMs : 
+	                    ROMs := 5     
++---Muxes : 
+	   6 Input  256 Bit        Muxes := 2     
+	   2 Input  256 Bit        Muxes := 2     
+	   4 Input   64 Bit        Muxes := 2     
+	   6 Input    9 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 2     
+	   6 Input    4 Bit        Muxes := 3     
+	   6 Input    3 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 3     
+	   6 Input    2 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 19    
+	   2 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 90 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1625.062 ; gain = 839.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+-----------------------+---------------+----------------+
+|Module Name | RTL Object            | Depth x Width | Implemented As | 
++------------+-----------------------+---------------+----------------+
+|layer       | count_neurons_reg_rep | 256x10        | Block RAM      | 
+|layer       | count_neurons_reg_rep | 256x7         | Block RAM      | 
++------------+-----------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1739.797 ; gain = 954.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 1828.059 ; gain = 1042.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance L1/wmem/data_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance L1/wmem/data_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance L1/wmem/data_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance L1/wmem/data_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance L1/wmem/data_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance L1/wmem/data_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance L1/wmem/data_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance L1/wmem/data_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance L1/count_neurons_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance L2/wmem/data_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance L2/wmem/data_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance L2/count_neurons_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance L3/wmem/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance L3/wmem/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1844.051 ; gain = 1058.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 2060.898 ; gain = 1275.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 2060.898 ; gain = 1275.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 2060.898 ; gain = 1275.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 2060.898 ; gain = 1275.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 2061.992 ; gain = 1276.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 2061.992 ; gain = 1276.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    21|
+|3     |LUT1     |     1|
+|4     |LUT2     |    40|
+|5     |LUT3     |   127|
+|6     |LUT4     |   511|
+|7     |LUT5     |   115|
+|8     |LUT6     |   433|
+|9     |RAMB18E1 |     2|
+|11    |RAMB36E1 |    11|
+|22    |FDRE     |  1254|
+|23    |IBUF     |     2|
+|24    |OBUF     |     4|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 2061.992 ; gain = 1276.742
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:56 . Memory (MB): peak = 2061.992 ; gain = 1212.012
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 2061.992 ; gain = 1276.742
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2071.148 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2074.855 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 402b3a18
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+60 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 2074.855 ; gain = 1443.930
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2074.855 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/HardwareAccelerator/HardwareAccelerator.runs/synth_1/bnn_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bnn_top_utilization_synth.rpt -pb bnn_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  4 10:10:24 2026...

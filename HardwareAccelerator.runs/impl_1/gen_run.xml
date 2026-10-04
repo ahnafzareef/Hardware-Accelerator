@@ -1,44 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7s25csga324-1" LaunchTime="1791122380">
-  <File Type="PLACE-CTRL" Name="bnn_top_control_sets_placed.rpt"/>
+<GenRun Id="impl_1" LaunchPart="xc7s25csga324-1" LaunchTime="1791122946">
   <File Type="PA-TCL" Name="bnn_top.tcl"/>
-  <File Type="PLACE-SIMILARITY" Name="bnn_top_incremental_reuse_placed.rpt"/>
   <File Type="REPORTS-TCL" Name="bnn_top_reports.tcl"/>
   <File Type="INIT-TIMING" Name="bnn_top_timing_summary_init.rpt"/>
   <File Type="OPT-DCP" Name="bnn_top_opt.dcp"/>
   <File Type="OPT-DRC" Name="bnn_top_drc_opted.rpt"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="bnn_top_routed_bb.dcp"/>
   <File Type="OPT-UTIL" Name="bnn_top_utilization_opted.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="bnn_top_timing_summary_routed.pb"/>
   <File Type="OPT-UTIL-PB" Name="bnn_top_utilization_opted.pb"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="bnn_top_methodology_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="bnn_top.hwdef"/>
   <File Type="OPT-TIMING" Name="bnn_top_timing_summary_opted.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="bnn_top_power_summary_routed.pb"/>
   <File Type="OPT-RQA-PB" Name="bnn_top_rqa_opted.pb"/>
   <File Type="PWROPT-DCP" Name="bnn_top_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="bnn_top_drc_pwropted.rpt"/>
-  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="bnn_top.nts"/>
   <File Type="PWROPT-TIMING" Name="bnn_top_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="bnn_top_placed.dcp"/>
   <File Type="PLACE-IO" Name="bnn_top_io_placed.rpt"/>
   <File Type="PLACE-CLK" Name="bnn_top_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="bnn_top_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="bnn_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="bnn_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="bnn_top_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="bnn_top_incremental_reuse_pre_placed.rpt"/>
-  <File Type="NOC_SOLUTION_FILE" Name="bnn_top.ncr"/>
   <File Type="PLACE-TIMING" Name="bnn_top_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="bnn_top_power_routed.rpx"/>
   <File Type="PLACE-RQA-PB" Name="bnn_top_rqa_placed.pb"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="bnn_top_postplace_pwropt.dcp"/>
   <File Type="POSTPLACE-PWROPT-TIMING" Name="bnn_top_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="bnn_top_physopt.dcp"/>
   <File Type="PHYSOPT-DRC" Name="bnn_top_drc_physopted.rpt"/>
   <File Type="PHYSOPT-TIMING" Name="bnn_top_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-UTIL" Name="bnn_top_utilization_routed.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="bnn_top_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="bnn_top_routed.dcp"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="bnn_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="bnn_top_routed_bb.dcp"/>
+  <File Type="ROUTE-UTIL" Name="bnn_top_utilization_routed.rpt"/>
   <File Type="ROUTE-UTIL-PB" Name="bnn_top_utilization_routed.pb"/>
   <File Type="ROUTE-DRC" Name="bnn_top_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="bnn_top_drc_routed.pb"/>
@@ -47,15 +41,19 @@
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="bnn_top_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="bnn_top_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR" Name="bnn_top_power_routed.rpt"/>
-  <File Type="ROUTE-RQS-PB" Name="bnn_top_rqs_routed.pb"/>
+  <File Type="ROUTE-PWR-SUM" Name="bnn_top_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="bnn_top_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="bnn_top_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="bnn_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="bnn_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="bnn_top_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="bnn_top_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="bnn_top_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="bnn_top_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="bnn_top_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="bnn_top_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="bnn_top_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="bnn_top_rqs_routed.pb"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="bnn_top_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="bnn_top_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="layer_timing_summary_postroute_physopted.rpt"/>
@@ -64,6 +62,8 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="layer_bus_skew_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="layer_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="layer_bus_skew_postroute_physopted.rpx"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="bnn_top.nts"/>
+  <File Type="NOC_SOLUTION_FILE" Name="bnn_top.ncr"/>
   <File Type="BG-BIT" Name="bnn_top.bit"/>
   <File Type="BG-XML" Name="bnn_top.xml"/>
   <File Type="BG-WRITE-BITSTREAM-XML" Name="write_bitstream.xml"/>
