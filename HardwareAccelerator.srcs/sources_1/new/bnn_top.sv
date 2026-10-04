@@ -45,28 +45,9 @@ logic start;
 
 assign start = !start_running && !reset;
 
+bnn_core core (
+    .clk(clk), .rst(reset), .start(start),
+    .image(image[0]), .digit(led), .done()
+);
 
-/*
-LAYER DETAILS
-
-1st Layer: 784 into 256 neurons, outputting 256 neurons. Plug THAT into layer2. so a seperate wire.
-Layer 2: Same thing 256 neurons so 256 outputs plugged into 10 neurons.
-Layer 3: when u get to layer 3 put ARGMAX as 1 in the parameters. Also we need sequential so 3 seperate done wires. and no thresh
-*/
-
-//Layer Stuff
-logic [255:0] layer1_output, layer2_output;
-logic layer1_done, layer2_done, layer3_done;
-logic [3:0] digit;
-
-layer #(.INPUTS_I(784), .WIDTH_O(256), .WEIGHT_FILE("layer1_weights.mem"), .THRESH_FILE("layer1_thresh.mem")) L1 (
-    .clk(clk), .rst(reset), .start(start), .input_bits(image[0]), .output_bits(layer1_output), .digit(), .done(layer1_done));
-
-layer #(.INPUTS_I(256), .WIDTH_O(256), .WEIGHT_FILE("layer2_weights.mem"), .THRESH_FILE("layer2_thresh.mem")) L2 (
-    .clk(clk), .rst(reset), .start(layer1_done), .input_bits(layer1_output), .output_bits(layer2_output), .digit(), .done(layer2_done));
-
-layer #(.INPUTS_I(256), .WIDTH_O(10), .WEIGHT_FILE("layer3_weights.mem"),.ARGMAX(1)) L3 (
-    .clk(clk), .rst(reset), .start(layer2_done), .input_bits(layer2_output), .output_bits(), .digit(digit), .done(layer3_done));   
-
-assign led = digit;
 endmodule
