@@ -94,8 +94,8 @@ I was going to make these into fancy diagrams, but for transparency, here's what
 
 <img width="722" height="692" alt="image" src="https://github.com/user-attachments/assets/2d4afc3d-fc54-42e2-b7e3-05bc6823fed4" />
 
+<br><br>
 
-\
 
 | State | Does |
 |---|---|
