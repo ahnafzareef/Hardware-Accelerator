@@ -49,7 +49,7 @@ This means that the neuron now compares 64 input bits at every clock cycle. So o
 
 ## System Architecture and my Diagram Drawings
 
-Here's the general System Architecture and all the Diagrams I doodled on my way to making this. 
+Here's the general System Architecture.
 
 ```mermaid
 flowchart LR
@@ -60,14 +60,6 @@ flowchart LR
     CORE --> BNN
     SC <--> UART[AXI UART Lite<br/>debug]
 ```
-### Neuron Block Diagram
-<img width="1270" height="458" alt="image" src="https://github.com/user-attachments/assets/d34b5973-5290-4bf9-8648-ab4f6e0b31f5" />
-
-##State Machine FSM
-<img width="724" height="680" alt="image" src="https://github.com/user-attachments/assets/a51cc392-c3f8-4415-b55e-157de552ebd4" />
-<img width="1026" height="748" alt="image" src="https://github.com/user-attachments/assets/46fc236d-8b77-4efb-bafa-d99a0ebc8ce7" />
-
-
 ---
 
 ## The Network
@@ -78,23 +70,22 @@ flowchart LR
 | 2 | 256 | 256 | 256 bits (threshold) |
 | 3 | 256 | 10 | digit (argmax) |
 
-<!-- Binarized: +1/-1 stored as 1/0, multiply = XNOR, sum = popcount -->
-<!-- Thresholds: batch norm folded into one integer per neuron -->
-<!-- Accuracy on MNIST test set: XX% -->
-
 ---
+
+I was going to make these into fancy diagrams, but for transparency, here's what I drew out to help me.
 
 ## Hardware Design
 
 ### Neuron
 
-![neuron](docs/neuron_schematic.png)
+![neuron](<img width="1262" height="468" alt="image" src="https://github.com/user-attachments/assets/a18a1f31-81a8-450f-8662-78925607f3b6" />)
 
 <!-- XNOR 64 bits -> popcount -> accumulate. clear / en control. -->
 
 ### Layer
 
-![layer](docs/layer_block_diagram.png)
+![layer](<img width="1034" height="740" alt="image" src="https://github.com/user-attachments/assets/f805055b-37a8-4f17-897a-99996b952bbd" />
+)
 
 <!-- Chunk counter, neuron counter, input mux, weight BRAM, delay FFs, threshold compare -->
 
@@ -179,9 +170,8 @@ flowchart LR
 ## Build & Run
 
 1. **Export weights:** `python python/export_weights.py`
-2. **Vivado:** package `bnn_axi`, add to block design, generate bitstream, export `.xsa`
-3. **Vitis:** create platform from `.xsa`, build the app in `sw/`
-4. **Load:** XSDB (`fpga -f <bit>`, `dow <elf>`, `con`)
+2. **Vivado:** package `BNN_AXI_IP`, add to block design, generate bitstream, export `.xsa`
+3. **Vitis:** create platform from `.xsa`, build and run the app in `TouchScreenDriver/bnn_touch`
 
 ---
 
