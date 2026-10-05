@@ -1,4 +1,4 @@
-# XNOR-9: Binarized Neural Network Accelerator on FPGA
+# Binarized Neural Network Accelerator on FPGA
 
 > Draw a digit on a touchscreen; a custom BNN accelerator running on an FPGA classifies it in hardware.
 
@@ -166,9 +166,13 @@ Because `ARGMAX` is a constant, Vivado only builds the branch each instance uses
 
 | Resource | Used | Available | % |
 |---|---|---|---|
-| Slice LUTs | | 14,600 | |
-| Slice Registers | | 29,200 | |
-| Block RAM Tiles | | 45 | |
+| Slice LUTs | 3,731 | 14,600 | 26% |
+| Slice Registers | 4,815 | 29,200 | 16% |
+| LUT as Memory | 150 | 5,000 | 3% |
+| Block RAM Tiles | 28 | 45 | 62% |
+| Bonded IOB | 12 | 150 | 8% |
+| MMCM | 1 | 3 | 33% |
+
 
 <!-- your utilization paragraph -->
 
@@ -177,28 +181,14 @@ Because `ARGMAX` is a constant, Vivado only builds the branch each instance uses
 | Metric | Value |
 |---|---|
 | Clock | 100 MHz |
-| WNS | |
-| WHS | |
-
+| WNS | +0.251 ns |
+| WHS | +0.009 ns |
+| Failing endpoints | 0 |
 <!-- your timing paragraph -->
 
 ### Latency
 
 <!-- ~60 us per inference -->
-
----
-
-## Repository Structure
-
-```
-.
-├── rtl/          # neuron, layer, weight_mem, bnn_core, bnn_top
-├── ip_repo/      # packaged bnn_axi AXI4-Lite IP
-├── sw/           # MicroBlaze touch app (C)
-├── python/       # weight export
-├── weights/      # trained .npy + generated .mem files
-└── docs/         # diagrams, demo
-```
 
 ---
 
@@ -221,9 +211,15 @@ So once you get those weights just:
 
 ## AI Usage
 
-<!-- Weight export script and MicroBlaze touch app written with AI assistance.
-     RTL design (neuron, layer, FSM, bnn_core) is my own. -->
+AI was used in developing this, but not all of it. 
 
+The entirety of the touch ([driver](https://github.com/ahnafzareef/ILI9341Driver)) I made this summer was done by me by referencing a design for an existing driver. In addition to that the RTL written in this program is all mine and worked through by me.
+
+AI was used to:
+- Determine whether something was possible
+- Write the Python Scripts for exporting the weights, which was pretty much busy work
+- Take my Driver that I made and simply wire it up with the BNN IP that I created
+- Learning about how AXI even works and also how BRAM works, also did AI reading through UG1037, UG109 and UG473 for User Guides on determining how to 1. make a BRAM module, AXI4 IP and more.
 ---
 
 ## Future Work
