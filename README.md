@@ -216,6 +216,7 @@ So once you get those weights just:
 AI was used in developing this, but not all of it. 
 
 The entirety of the touch ([driver](https://github.com/ahnafzareef/ILI9341Driver)) I made this summer was done by me by referencing a design for an existing driver. In addition to that the RTL written in this program is all mine and worked through by me.
+AI is not good at interpreting the drawings and ideas you have on your notes. Maybe not yet. Instead I did use it and told it about what I had drawn and my plans, and it gave me advice, how to optimize and if it's even possible.
 
 AI was used to:
 - Determine whether something was possible
