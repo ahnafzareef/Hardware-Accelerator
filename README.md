@@ -203,8 +203,6 @@ So once you get those weights just:
 <!-- Hardware validated on board (MNIST samples + live drawing). -->
 <!-- UVM verification in progress: golden model, scoreboard, assertions, coverage. -->
 
----
-
 ## AI Usage
 
 AI was used in developing this, but not all of it. 
