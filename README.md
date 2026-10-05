@@ -219,9 +219,5 @@ AI was used to:
 ---
 
 ## Future Work
-Ok so still not computing many neurons at once, I want to make it MUCH MUCH faster by computing multiple neurons per layer.
-Scale/Center preprocessing for better accuracy.
-
-- [ ] Multiple neurons in parallel per layer
-- [ ] Complete UVM verification
-- [ ] Scale/center preprocessing for better accuracy on hand-drawn digits
+- Ok so still not computing many neurons at once, I want to make it MUCH MUCH faster by computing multiple neurons per layer.
+- Scale/Center preprocessing for better accuracy.
