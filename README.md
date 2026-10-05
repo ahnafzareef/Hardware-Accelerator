@@ -224,6 +224,43 @@ So once you get those weights just:
 
 Learning DV from scratch, once i figure out what to actually put here I will.
 
+
+## Ideation and Though Process (Messy)
+Neural networks are big, when you want something to do with them it often requires you to have a device with maximal footprint/storage for you to get meaningful usage out of it. But as time goes on a need for smaller systems running hardware like this becomes much more meaningful and required. While this device might seemingly be minute in the grand scheme of things, I guess it is my first look into the World I look to explore about how to shrink models down and make them more sustainable. Anyone reading this knows the effect of the huge data centers, and I want to explore a realm where we can get the same level of efficiency and accuracy with much less of a footprint.
+
+The idea started from the research paper cited in the original ([XNOR-9](https://github.com/ahnafzareef/XNOR-9)) project. The idea is simple, modern neural networks have complex math. A standard neural network takes an input as a floating point number, computes its weight as a floating point number, multiplies the two together and adds all of these results together for each neuron in a layer and determines if this input is meaningful. If that meant nothing to you, it might help to imagine that this operation alone requires a **multiplier and an accumulator** in the scheme of digital logic. However, if there was a way to represent all that I have mentioned as binary numbers, then the operations become simple. Multiplying a 1 or 0 is simply just an XNOR, they either agree or disagree, and adding them together is as simple as a 1 bit adder. So we've gone from a huge adder tree plus the logic for a multiplier to just one gate, the XNOR. 
+
+So then I began thinking: "how could I implement this?". I wanted to do digit recognition, I wanted to write something on a screen and have it predict what digit I wrote. Well I've worked extensively with MNIST and MobileNet and all those datasets before. MNIST has a preconfigured dataset of 28by28 images, flattened to 784 pixels. So I thought, we can train a model on TensorFlow like I've done a million times, take those weights, somehow put them onto the FPGA (who knows where at this stage) and I should be able to take incoming images, flatten them to a row of bits, compare each bit to its respective input bit and voila! 
+
+The idea was simple, a 256-256-10 layer neural network, Layer 1 taking 784 inputs (28x28 MNIST Image), layer 2 taking the output of layer 1(256) and layer 3 taking the output of layer 2 (256) and adding a count to its 10 neurons which one has more matches, whichever has the most matches is the most likely digit (0-9), I learned that this was called argmax. 
+
+So, how do you get these weights to be stored, biggest issue right? Well there exists BRAN (thank you NANDLAND for your amazing videos), BRAM has many different configurations like single port, dual port or simply just ROM. I needed ROM, I never wanted to touch these weights after placing them there. 
+And so if you go through the user ([user guides](https://docs.amd.com/r/en-US/ug901-vivado-synthesis/HDL-Coding-Techniques)), go to the the RAM HDL Coding guidelines and find the single port ROM section it shows you how to instantiate a module for BRAM inference by the compiler. This just means the compiler sees you want something that needs huge storage, and it assumes the better way of storing this is not individual LUTs but in the BRAM. Each BRAM block is 45 blocks, each block is 36 Kb each, which is about 1620 Kb. Please notice the lowercase b, its kilobits, even I was confused. Each block is 32 Kb of data with 4 Kb of parity bits. They are all clocked as per the user guides, and are normally used for large CDC. One row in a block can be 36 bits wide. In my design I wanted 64 bits in one BRAM slot cause speed. So what Vivado does is it puts two blocks next to eachother and reads from the same address. And now you may be asking why it doesn't use another row in the same block, well that's cause one port reads one row per clock. In the same block, reading multiple rows is impossible. Ok anyways, so I wanted one row to be 64 input bits for one neuron starting from neuron 0. So that means neuron 0 which takes 784 input bits has 13 chunks of these 64 bit rows times 256 neurons. Layer 2 has only 10 chunks and layer 3 only has 4. The way I thought about computing each address is simple. Take the total number of chunks in that row (say 12) then multiply it by the the neuron you're on (say 1) then add which input chunk you're currently on (lets say we're on the first one) so its 13 times 1 plus 0, which is 13. See the table below. 
+
+Example (layer 1, `CHUNKS = 13`):
+
+| Row | Neuron | Chunk | Inputs covered |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 – 63 |
+| 1 | 0 | 1 | 64 – 127 |
+| ... | ... | ... | ... |
+| 12 | 0 | 12 | 768 – 783 (+ 48 padding) |
+| 13 | 1 | 0 | 0 – 63 |
+| 14 | 1 | 1 | 64 – 127 |
+| ... | ... | ... | ... |
+| 3,327 | 255 | 12 | 768 – 783 (+ 48 padding) |
+
+So neuron 1, chunk 0 is row `1 × 13 + 0 = 13`, right after neuron 0's last row.
+
+Ok anyways now that I got that set. I made the RTL for a neuron, then the layers then the top module. The neuron was simple, as shown in the neuron block diagram above, you take 64 incoming input bits, XNOR with 64 incoming weight bits, add them together with an adder tree. Then we add them to the total count. We then have a MUX, this MUX is so if we choose to clear or enable then it either sets to 0 or allows the new value to get stored on the FF.
+
+Ok from there I went to make layer RTL. It was also quite simple, its just an FSM with states IDLE, LOAD, CLEAR, RUN, WAIT and CHECK. So in other words we loaded all the inputs into one register for one layer so 784 for layer 1, PULL 64 bit of that input, pull 64 bits of that output, push them into our neuron we just made and watch the magic happen. The additional stuff is the RTL for comparing it to the treshold, so it's just a comparator and then when it's done it goes to the done state for that layer. This is all much easier visualized by looking at the layer FSM and BD all the way above. **I wanted to include this point that because BRAM is clocked, both the enable and the INPUT REG are flopped, which means they are held for a clock cycle because BRAM is clocked and everything happens on one clock edge so I had to line them up. TRUST ME, YOU NEED THIS, it is too much work to ignore this. Trying to figure out why this is the case genuinely took me forever, it wasn't until I read the documentation, still didn't understand it and then got the suggestion from AI that BRAM is clocked, your inputs and enable signal are not, that I figured it out** 
+
+The rest was easy, Vivado makes it super easy to make an IP with their IP manager, so I made it into an IP. Took the IP from my neuron and layer stuff and added it to my block diagram for the Microblaze system for the ILI9341 driver, ran connection automation, generated the XSA, put it onto Vitis, programmed a new C program that connects the displays SPI output to the IP and then takes the output from IP which is the digit and then displays it on the screen. 
+
+This entire project has so many little parts to it, it's a bunch of micro projects combined into one.
+
+
 ## AI Usage
 
 AI was used in developing this, but not all of it. 
