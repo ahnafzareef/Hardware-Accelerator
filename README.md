@@ -168,6 +168,8 @@ I was going to make these into fancy diagrams, but for transparency, here's what
 ---
 
 ## Build & Run
+For me the neural network remained the same, as such ([XNOR-9](https://github.com/ahnafzareef/XNOR-9)) has all the weights.npy files for each layer which was used here. The main difference is the exportation of the width need to match a new structure because I changed how they're saved in BRAM. 
+So once you get those weights just: 
 
 1. **Export weights:** `python python/export_weights.py`
 2. **Vivado:** package `BNN_AXI_IP`, add to block design, generate bitstream, export `.xsa`
