@@ -11,8 +11,8 @@
 **Board:** Digilent Arty S7-25 (`xc7s25csga324-1`)
 **Display:** 2.8" ILI9341 SPI TFT + XPT2046 touch ([driver](https://github.com/ahnafzareef/ILI9341Driver))
 
-### DEMO VIDEO!!!
-
+### DEMO VIDEO!!! 
+Sorry for the weird resolution, shot on Iphone can you tell? 🤩🤩🤩
 
 
 https://github.com/user-attachments/assets/c37e5d95-362d-4e38-bbf3-f081afe3dd13
