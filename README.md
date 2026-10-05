@@ -222,8 +222,7 @@ So once you get those weights just:
 
 ## Verification
 
-<!-- Hardware validated on board (MNIST samples + live drawing). -->
-<!-- UVM verification in progress: golden model, scoreboard, assertions, coverage. -->
+Learning DV from scratch, once i figure out what to actually put here I will.
 
 ## AI Usage
 
