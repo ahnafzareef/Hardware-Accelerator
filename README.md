@@ -13,7 +13,7 @@
 
 ### v1 → v2
 
-This is Version 2 of my BNN hardware accelerator. The XNOR-9 which was the first iteration was
+This is Version 2 of my BNN hardware accelerator. The ([XNOR-9](https://github.com/ahnafzareef/XNOR-9)) which was the first iteration was
 a BNN running on a Tang Nano 9K with an ESP32 Web Server doing the digit streaming over UART.
 To me that felt really unfinished and forced. Over the summer I worked on building my FPGA design skills
 and made my own ILI9431 SPI Display Driver using Vitis and chose to utilize it for this project such
