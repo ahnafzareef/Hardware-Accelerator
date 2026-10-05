@@ -78,21 +78,21 @@ I was going to make these into fancy diagrams, but for transparency, here's what
 
 ### Neuron
 
-[neuron](<img width="1278" height="462" alt="image" src="https://github.com/user-attachments/assets/b39077d4-2951-4e36-90cc-da71c4fa56b8" />
+(<img width="1278" height="462" alt="image" src="https://github.com/user-attachments/assets/b39077d4-2951-4e36-90cc-da71c4fa56b8" />
 )
 
 <!-- XNOR 64 bits -> popcount -> accumulate. clear / en control. -->
 
 ### Layer
 
-[layer](<img width="1070" height="764" alt="image" src="https://github.com/user-attachments/assets/f5140194-b181-4e51-8b68-fdaabfb5e624" />
+(<img width="1070" height="764" alt="image" src="https://github.com/user-attachments/assets/f5140194-b181-4e51-8b68-fdaabfb5e624" />
 )
 
 <!-- Chunk counter, neuron counter, input mux, weight BRAM, delay FFs, threshold compare -->
 
 ### Layer FSM
 
-[fsm](<img width="722" height="692" alt="image" src="https://github.com/user-attachments/assets/2d4afc3d-fc54-42e2-b7e3-05bc6823fed4" />
+(<img width="722" height="692" alt="image" src="https://github.com/user-attachments/assets/2d4afc3d-fc54-42e2-b7e3-05bc6823fed4" />
 )
 
 | State | Does |
