@@ -211,8 +211,9 @@ The entirety of the touch ([driver](https://github.com/ahnafzareef/ILI9341Driver
 
 AI was used to:
 - Determine whether something was possible
-- Write the Python Scripts for exporting the weights, which was pretty much busy work
-- Take my Driver that I made and simply wire it up with the BNN IP that I created
+- Write the Python Scripts for exporting the weights. To be clear, since this was a Verilog Project I used AI to write all of `python/export_hw.py` and `python/mem_to_c.py`. I was however in charge of dealing with structuring the memory to fit the specification that I wrote down in my notes
+  for the BRAM otherwise obviously it wouldn't work.
+- Help me write `TouchScreenDriver/bnn_touch/src/main.c` by taking my driver and showing me how to wire it up. 
 - Learning about how AXI even works and also how BRAM works, also did AI reading through UG1037, UG109 and UG473 for User Guides on determining how to 1. make a BRAM module, AXI4 IP and more.
 ---
 
