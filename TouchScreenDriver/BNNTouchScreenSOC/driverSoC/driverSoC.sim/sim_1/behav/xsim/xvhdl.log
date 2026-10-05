@@ -1,0 +1,20 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/ip/driverSystem_rst_clk_wiz_1_100M_0/sim/driverSystem_rst_clk_wiz_1_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'driverSystem_rst_clk_wiz_1_100M_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/ip/driverSystem_axi_quad_spi_0_0/sim/driverSystem_axi_quad_spi_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'driverSystem_axi_quad_spi_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/ip/driverSystem_microblaze_0_0/sim/driverSystem_microblaze_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'driverSystem_microblaze_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/ip/driverSystem_axi_gpio_0_0/sim/driverSystem_axi_gpio_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'driverSystem_axi_gpio_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/ip/driverSystem_mdm_1_0/sim/driverSystem_mdm_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'driverSystem_mdm_1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/ip/driverSystem_dlmb_v10_0/sim/driverSystem_dlmb_v10_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'driverSystem_dlmb_v10_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/ip/driverSystem_ilmb_v10_0/sim/driverSystem_ilmb_v10_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'driverSystem_ilmb_v10_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/ip/driverSystem_dlmb_bram_if_cntlr_0/sim/driverSystem_dlmb_bram_if_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'driverSystem_dlmb_bram_if_cntlr_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/ip/driverSystem_ilmb_bram_if_cntlr_0/sim/driverSystem_ilmb_bram_if_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'driverSystem_ilmb_bram_if_cntlr_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/ip/driverSystem_axi_uartlite_0_0/sim/driverSystem_axi_uartlite_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'driverSystem_axi_uartlite_0_0'

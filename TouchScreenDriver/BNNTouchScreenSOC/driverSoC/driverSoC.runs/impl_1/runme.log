@@ -1,0 +1,1746 @@
+
+*** Running vivado
+    with args -log driverSystem_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source driverSystem_wrapper.tcl -notrace
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 15-jul-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sun Oct  4 19:44:30 2026
+# Process ID         : 52864
+# Current directory  : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1
+# Command line       : vivado.exe -log driverSystem_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source driverSystem_wrapper.tcl -notrace
+# Log file           : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1/driverSystem_wrapper.vdi
+# Journal file       : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1\vivado.jou
+# Running On         : LAPTOP-E4LD1OHV
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16438 MB
+# Swap memory        : 31041 MB
+# Total Virtual      : 47479 MB
+# Available Virtual  : 7032 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Sun Oct  4 19:44:30 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source driverSystem_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 626.906 ; gain = 301.887
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+Command: link_design -top driverSystem_wrapper -part xc7s25csga324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7s25csga324-1
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_gpio_0_0/driverSystem_axi_gpio_0_0.dcp' for cell 'driverSystem_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0.dcp' for cell 'driverSystem_i/axi_quad_spi_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/driverSystem_axi_smc_0.dcp' for cell 'driverSystem_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_uartlite_0_0/driverSystem_axi_uartlite_0_0.dcp' for cell 'driverSystem_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_bnn_axi_0_2/driverSystem_bnn_axi_0_2.dcp' for cell 'driverSystem_i/bnn_axi_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0.dcp' for cell 'driverSystem_i/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_mdm_1_0/driverSystem_mdm_1_0.dcp' for cell 'driverSystem_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_microblaze_0_0/driverSystem_microblaze_0_0.dcp' for cell 'driverSystem_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_rst_clk_wiz_1_100M_0/driverSystem_rst_clk_wiz_1_100M_0.dcp' for cell 'driverSystem_i/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_dlmb_bram_if_cntlr_0/driverSystem_dlmb_bram_if_cntlr_0.dcp' for cell 'driverSystem_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_dlmb_v10_0/driverSystem_dlmb_v10_0.dcp' for cell 'driverSystem_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_ilmb_bram_if_cntlr_0/driverSystem_ilmb_bram_if_cntlr_0.dcp' for cell 'driverSystem_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_ilmb_v10_0/driverSystem_ilmb_v10_0.dcp' for cell 'driverSystem_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_lmb_bram_0/driverSystem_lmb_bram_0.dcp' for cell 'driverSystem_i/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 879.203 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 365 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_rst_clk_wiz_1_100M_0/driverSystem_rst_clk_wiz_1_100M_0_board.xdc] for cell 'driverSystem_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_rst_clk_wiz_1_100M_0/driverSystem_rst_clk_wiz_1_100M_0_board.xdc] for cell 'driverSystem_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0_board.xdc] for cell 'driverSystem_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0_board.xdc] for cell 'driverSystem_i/axi_quad_spi_0/U0'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0.xdc] for cell 'driverSystem_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0.xdc] for cell 'driverSystem_i/axi_quad_spi_0/U0'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_microblaze_0_0/driverSystem_microblaze_0_0.xdc] for cell 'driverSystem_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_microblaze_0_0/driverSystem_microblaze_0_0.xdc] for cell 'driverSystem_i/microblaze_0/U0'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_gpio_0_0/driverSystem_axi_gpio_0_0_board.xdc] for cell 'driverSystem_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_gpio_0_0/driverSystem_axi_gpio_0_0_board.xdc] for cell 'driverSystem_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/bd_0/ip/ip_0/bd_8f8c_sc_ul_0_cdc.xdc] for cell 'driverSystem_i/axi_smc/inst/sc_ul/inst'
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/bd_0/ip/ip_0/bd_8f8c_sc_ul_0_cdc.xdc:24]
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/bd_0/ip/ip_0/bd_8f8c_sc_ul_0_cdc.xdc] for cell 'driverSystem_i/axi_smc/inst/sc_ul/inst'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/smartconnect.xdc] for cell 'driverSystem_i/axi_smc/inst'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/smartconnect.xdc] for cell 'driverSystem_i/axi_smc/inst'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0_board.xdc] for cell 'driverSystem_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0_board.xdc] for cell 'driverSystem_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0.xdc] for cell 'driverSystem_i/clk_wiz_1/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0.xdc:54]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1481.023 ; gain = 475.922
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0.xdc] for cell 'driverSystem_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_uartlite_0_0/driverSystem_axi_uartlite_0_0_board.xdc] for cell 'driverSystem_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_uartlite_0_0/driverSystem_axi_uartlite_0_0_board.xdc] for cell 'driverSystem_i/axi_uartlite_0/U0'
+Parsing XDC File [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.srcs/constrs_1/imports/Spartan7/Arty-S7-25-Master.xdc]
+Finished Parsing XDC File [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.srcs/constrs_1/imports/Spartan7/Arty-S7-25-Master.xdc]
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0_clocks.xdc] for cell 'driverSystem_i/axi_quad_spi_0/U0'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0_clocks.xdc:50]
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0_clocks.xdc] for cell 'driverSystem_i/axi_quad_spi_0/U0'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_mdm_1_0/driverSystem_mdm_1_0.xdc] for cell 'driverSystem_i/mdm_1/U0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_mdm_1_0/driverSystem_mdm_1_0.xdc] for cell 'driverSystem_i/mdm_1/U0'
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Project 1-1714] 22 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+WARNING: [Constraints 18-5572] Instance driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+Generating merged BMM file for the design top 'driverSystem_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_microblaze_0_0/data/mb_bootloop_le.elf 
+INFO: [Project 1-1687] 1 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1481.023 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 102 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 18 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+31 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1481.023 ; gain = 812.266
+Command: opt_design
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7s25'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1481.023 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 27c6e17cf
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.513 . Memory (MB): peak = 1481.023 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 27c6e17cf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1947.977 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 27c6e17cf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1947.977 ; gain = 0.000
+Phase 1 Initialization | Checksum: 27c6e17cf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1947.977 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 27c6e17cf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 1948.020 ; gain = 0.043
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 27c6e17cf
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.643 . Memory (MB): peak = 1948.020 ; gain = 0.043
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 27c6e17cf
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.661 . Memory (MB): peak = 1948.020 ; gain = 0.043
+Phase 2 Timer Update And Timing Data Collection | Checksum: 27c6e17cf
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.664 . Memory (MB): peak = 1948.020 ; gain = 0.043
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 3 inverters resulting in an inversion of 18 pins
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1f2a2130f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1948.020 ; gain = 0.043
+Retarget | Checksum: 1f2a2130f
+INFO: [Opt 31-389] Phase Retarget created 43 cells and removed 71 cells
+INFO: [Opt 31-1021] In phase Retarget, 4 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 1d170cd73
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1948.020 ; gain = 0.043
+Constant propagation | Checksum: 1d170cd73
+INFO: [Opt 31-389] Phase Constant propagation created 16 cells and removed 48 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1948.020 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1948.020 ; gain = 0.000
+Phase 5 Sweep | Checksum: 29060a73d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1948.020 ; gain = 0.043
+Sweep | Checksum: 29060a73d
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 136 cells
+INFO: [Opt 31-1021] In phase Sweep, 6 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG driverSystem_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG_inst to drive 39 load(s) on clock net driverSystem_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 6 BUFG optimization | Checksum: 1bf3c7fe4
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1948.020 ; gain = 0.043
+BUFG optimization | Checksum: 1bf3c7fe4
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1bf3c7fe4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1948.020 ; gain = 0.043
+Shift Register Optimization | Checksum: 1bf3c7fe4
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1bf3c7fe4
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1948.020 ; gain = 0.043
+Post Processing Netlist | Checksum: 1bf3c7fe4
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 2cf2e660b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1948.020 ; gain = 0.043
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1948.020 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 2cf2e660b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1948.020 ; gain = 0.043
+Phase 9 Finalization | Checksum: 2cf2e660b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1948.020 ; gain = 0.043
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              43  |              71  |                                              4  |
+|  Constant propagation         |              16  |              48  |                                              1  |
+|  Sweep                        |               0  |             136  |                                              6  |
+|  BUFG optimization            |               1  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              1  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 2cf2e660b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1948.020 ; gain = 0.043
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 29 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 17 newly gated: 12 Total Ports: 58
+Number of Flops added for Enable Generation: 7
+
+Ending PowerOpt Patch Enables Task | Checksum: 192e12fe6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.337 . Memory (MB): peak = 1948.020 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 192e12fe6
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1948.020 ; gain = 0.000
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 1702aa6c4
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1999.871 ; gain = 49.488
+Ending Final Cleanup Task | Checksum: 1702aa6c4
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1999.871 ; gain = 51.852
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1999.871 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+65 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 1999.871 ; gain = 518.848
+INFO: [Vivado 12-24828] Executing command : report_drc -file driverSystem_wrapper_drc_opted.rpt -pb driverSystem_wrapper_drc_opted.pb -rpx driverSystem_wrapper_drc_opted.rpx
+Command: report_drc -file driverSystem_wrapper_drc_opted.rpt -pb driverSystem_wrapper_drc_opted.pb -rpx driverSystem_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1/driverSystem_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1999.871 ; gain = 0.000
+generate_parallel_reports: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1999.871 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1999.871 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1/driverSystem_wrapper_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7s25'
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 14b0c9bde
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+CRITICAL WARNING: [Place 30-73] Invalid constraint on register 'driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG'. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1baac629c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.886 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 2b678a3e9
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 2b678a3e9
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 2b678a3e9
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 2e4ec72e4
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 2de8798b2
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 2de8798b2
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 3621b629b
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:17 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 2f8d2eb17
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:18 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 71 LUTNM shape to break, 216 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 18, two critical 53, total 71, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 168 nets or LUTs. Breaked 71 LUTs, combined 97 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           71  |             97  |                   168  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           71  |             97  |                   168  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 3423b1ed1
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:19 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Phase 2.5 Global Place Phase2 | Checksum: 2e66db4e6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:20 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 2e66db4e6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:20 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 2f5d9dd77
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 23c219a00
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:23 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 2b7067f30
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:23 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 31b78b8d2
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:23 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 2f6baff2a
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:26 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 2e1294f9f
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:32 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 2ce6c6de2
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:33 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 32a50d321
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:33 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 248099b2f
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:41 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 248099b2f
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:41 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 2575f8682
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.342 | TNS=-0.698 |
+Phase 1 Physical Synthesis Initialization | Checksum: 176588d70
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.449 . Memory (MB): peak = 1999.871 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 1beef1a27
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.494 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 2575f8682
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:45 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.345. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 2596e73d6
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:55 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:55 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 2596e73d6
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:55 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 2596e73d6
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:55 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 2596e73d6
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:56 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 2596e73d6
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:56 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:56 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2b0af897a
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:56 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Ending Placer Task | Checksum: 1c03db90c
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:56 . Memory (MB): peak = 1999.871 ; gain = 0.000
+105 Infos, 10 Warnings, 1 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:17 ; elapsed = 00:00:59 . Memory (MB): peak = 1999.871 ; gain = 0.000
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_io -file driverSystem_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.113 . Memory (MB): peak = 1999.871 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file driverSystem_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1999.871 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file driverSystem_wrapper_utilization_placed.rpt -pb driverSystem_wrapper_utilization_placed.pb
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.455 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.534 . Memory (MB): peak = 1999.871 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1/driverSystem_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7s25'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1999.871 ; gain = 0.000
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 0.345 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+116 Infos, 10 Warnings, 1 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.443 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.527 . Memory (MB): peak = 1999.871 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1/driverSystem_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7s25'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 42488f49 ConstDB: 0 ShapeSum: ab81fede RouteDB: d2732ae5
+Post Restoration Checksum: NetGraph: bb836dc8 | NumContArr: f23dc24a | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 33313254c
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 33313254c
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 33313254c
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1999.871 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 1e1cc423b
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 1999.871 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.364  | TNS=0.000  | WHS=-0.482 | THS=-1220.079|
+
+
+Phase 2.4 Soft Constraint Pins - Fast Budgeting
+Phase 2.4 Soft Constraint Pins - Fast Budgeting | Checksum: 1c2ba59a5
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0056899 %
+  Global Horizontal Routing Utilization  = 0.000257998 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 7590
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 7590
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 1587b80dc
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 1587b80dc
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 24bf249c0
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:29 . Memory (MB): peak = 1999.871 ; gain = 0.000
+Phase 4 Initial Routing | Checksum: 24bf249c0
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:29 . Memory (MB): peak = 1999.871 ; gain = 0.000
+INFO: [Route 35-580] Design has 14 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++=====================================+=====================================+====================================================================================================+
+| Launch Setup Clock                  | Launch Hold Clock                   | Pin                                                                                                |
++=====================================+=====================================+====================================================================================================+
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L3/neuron_n/count_reg[7]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L3/neuron_n/count_reg[8]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L3/neuron_n/count_reg[6]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L2/neuron_n/count_reg[8]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L1/neuron_n/count_reg[9]/D |
++-------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 1409
+ Number of Nodes with overlaps = 488
+ Number of Nodes with overlaps = 231
+ Number of Nodes with overlaps = 113
+ Number of Nodes with overlaps = 44
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.006 | TNS=-0.006 | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 33a95a06f
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:53 . Memory (MB): peak = 1999.871 ; gain = 0.000
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 311
+ Number of Nodes with overlaps = 105
+ Number of Nodes with overlaps = 52
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 8
+
+*** Running vivado
+    with args -log driverSystem_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source driverSystem_wrapper.tcl -notrace
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 15-jul-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sun Oct  4 19:54:36 2026
+# Process ID         : 29024
+# Current directory  : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1
+# Command line       : vivado.exe -log driverSystem_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source driverSystem_wrapper.tcl -notrace
+# Log file           : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1/driverSystem_wrapper.vdi
+# Journal file       : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1\vivado.jou
+# Running On         : LAPTOP-E4LD1OHV
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16438 MB
+# Swap memory        : 18215 MB
+# Total Virtual      : 34654 MB
+# Available Virtual  : 18403 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Sun Oct  4 19:54:36 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source driverSystem_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 629.477 ; gain = 304.336
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+Command: link_design -top driverSystem_wrapper -part xc7s25csga324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7s25csga324-1
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_gpio_0_0/driverSystem_axi_gpio_0_0.dcp' for cell 'driverSystem_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0.dcp' for cell 'driverSystem_i/axi_quad_spi_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/driverSystem_axi_smc_0.dcp' for cell 'driverSystem_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_uartlite_0_0/driverSystem_axi_uartlite_0_0.dcp' for cell 'driverSystem_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_bnn_axi_0_2/driverSystem_bnn_axi_0_2.dcp' for cell 'driverSystem_i/bnn_axi_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0.dcp' for cell 'driverSystem_i/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_mdm_1_0/driverSystem_mdm_1_0.dcp' for cell 'driverSystem_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_microblaze_0_0/driverSystem_microblaze_0_0.dcp' for cell 'driverSystem_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_rst_clk_wiz_1_100M_0/driverSystem_rst_clk_wiz_1_100M_0.dcp' for cell 'driverSystem_i/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_dlmb_bram_if_cntlr_0/driverSystem_dlmb_bram_if_cntlr_0.dcp' for cell 'driverSystem_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_dlmb_v10_0/driverSystem_dlmb_v10_0.dcp' for cell 'driverSystem_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_ilmb_bram_if_cntlr_0/driverSystem_ilmb_bram_if_cntlr_0.dcp' for cell 'driverSystem_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_ilmb_v10_0/driverSystem_ilmb_v10_0.dcp' for cell 'driverSystem_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_lmb_bram_0/driverSystem_lmb_bram_0.dcp' for cell 'driverSystem_i/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 882.961 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 365 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_rst_clk_wiz_1_100M_0/driverSystem_rst_clk_wiz_1_100M_0_board.xdc] for cell 'driverSystem_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_rst_clk_wiz_1_100M_0/driverSystem_rst_clk_wiz_1_100M_0_board.xdc] for cell 'driverSystem_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0_board.xdc] for cell 'driverSystem_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0_board.xdc] for cell 'driverSystem_i/axi_quad_spi_0/U0'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0.xdc] for cell 'driverSystem_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0.xdc] for cell 'driverSystem_i/axi_quad_spi_0/U0'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_microblaze_0_0/driverSystem_microblaze_0_0.xdc] for cell 'driverSystem_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_microblaze_0_0/driverSystem_microblaze_0_0.xdc] for cell 'driverSystem_i/microblaze_0/U0'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_gpio_0_0/driverSystem_axi_gpio_0_0_board.xdc] for cell 'driverSystem_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_gpio_0_0/driverSystem_axi_gpio_0_0_board.xdc] for cell 'driverSystem_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/bd_0/ip/ip_0/bd_8f8c_sc_ul_0_cdc.xdc] for cell 'driverSystem_i/axi_smc/inst/sc_ul/inst'
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-11' -from list should not be empty. [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/bd_0/ip/ip_0/bd_8f8c_sc_ul_0_cdc.xdc:24]
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/bd_0/ip/ip_0/bd_8f8c_sc_ul_0_cdc.xdc] for cell 'driverSystem_i/axi_smc/inst/sc_ul/inst'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/smartconnect.xdc] for cell 'driverSystem_i/axi_smc/inst'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/smartconnect.xdc] for cell 'driverSystem_i/axi_smc/inst'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0_board.xdc] for cell 'driverSystem_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0_board.xdc] for cell 'driverSystem_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0.xdc] for cell 'driverSystem_i/clk_wiz_1/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0.xdc:54]
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0.xdc] for cell 'driverSystem_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_uartlite_0_0/driverSystem_axi_uartlite_0_0_board.xdc] for cell 'driverSystem_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_uartlite_0_0/driverSystem_axi_uartlite_0_0_board.xdc] for cell 'driverSystem_i/axi_uartlite_0/U0'
+Parsing XDC File [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.srcs/constrs_1/imports/Spartan7/Arty-S7-25-Master.xdc]
+Finished Parsing XDC File [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.srcs/constrs_1/imports/Spartan7/Arty-S7-25-Master.xdc]
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0_clocks.xdc] for cell 'driverSystem_i/axi_quad_spi_0/U0'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0_clocks.xdc:50]
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0_clocks.xdc] for cell 'driverSystem_i/axi_quad_spi_0/U0'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_mdm_1_0/driverSystem_mdm_1_0.xdc] for cell 'driverSystem_i/mdm_1/U0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_mdm_1_0/driverSystem_mdm_1_0.xdc] for cell 'driverSystem_i/mdm_1/U0'
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Project 1-1714] 22 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+WARNING: [Constraints 18-5572] Instance driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+Generating merged BMM file for the design top 'driverSystem_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_microblaze_0_0/data/mb_bootloop_le.elf 
+INFO: [Project 1-1687] 1 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1486.902 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 102 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 18 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+31 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:24 . Memory (MB): peak = 1486.902 ; gain = 816.715
+Command: opt_design
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7s25'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.808 . Memory (MB): peak = 1486.902 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 27c6e17cf
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.339 . Memory (MB): peak = 1486.902 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 27c6e17cf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1957.152 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 27c6e17cf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1957.152 ; gain = 0.000
+Phase 1 Initialization | Checksum: 27c6e17cf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1957.152 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 27c6e17cf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1957.176 ; gain = 0.023
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 27c6e17cf
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.356 . Memory (MB): peak = 1957.176 ; gain = 0.023
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 27c6e17cf
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.370 . Memory (MB): peak = 1957.176 ; gain = 0.023
+Phase 2 Timer Update And Timing Data Collection | Checksum: 27c6e17cf
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.371 . Memory (MB): peak = 1957.176 ; gain = 0.023
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 3 inverters resulting in an inversion of 18 pins
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1f2a2130f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.585 . Memory (MB): peak = 1957.176 ; gain = 0.023
+Retarget | Checksum: 1f2a2130f
+INFO: [Opt 31-389] Phase Retarget created 43 cells and removed 71 cells
+INFO: [Opt 31-1021] In phase Retarget, 4 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 1d170cd73
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.665 . Memory (MB): peak = 1957.176 ; gain = 0.023
+Constant propagation | Checksum: 1d170cd73
+INFO: [Opt 31-389] Phase Constant propagation created 16 cells and removed 48 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1957.176 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1957.176 ; gain = 0.000
+Phase 5 Sweep | Checksum: 29060a73d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1957.176 ; gain = 0.023
+Sweep | Checksum: 29060a73d
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 136 cells
+INFO: [Opt 31-1021] In phase Sweep, 6 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG driverSystem_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG_inst to drive 39 load(s) on clock net driverSystem_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 6 BUFG optimization | Checksum: 1bf3c7fe4
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1957.176 ; gain = 0.023
+BUFG optimization | Checksum: 1bf3c7fe4
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1bf3c7fe4
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1957.176 ; gain = 0.023
+Shift Register Optimization | Checksum: 1bf3c7fe4
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1bf3c7fe4
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1957.176 ; gain = 0.023
+Post Processing Netlist | Checksum: 1bf3c7fe4
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 2cf2e660b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1957.176 ; gain = 0.023
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1957.176 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 2cf2e660b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1957.176 ; gain = 0.023
+Phase 9 Finalization | Checksum: 2cf2e660b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1957.176 ; gain = 0.023
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              43  |              71  |                                              4  |
+|  Constant propagation         |              16  |              48  |                                              1  |
+|  Sweep                        |               0  |             136  |                                              6  |
+|  BUFG optimization            |               1  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              1  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 2cf2e660b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1957.176 ; gain = 0.023
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 29 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 17 newly gated: 12 Total Ports: 58
+Number of Flops added for Enable Generation: 7
+
+Ending PowerOpt Patch Enables Task | Checksum: 192e12fe6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.188 . Memory (MB): peak = 1957.176 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 192e12fe6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1957.176 ; gain = 0.000
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 1702aa6c4
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.996 . Memory (MB): peak = 1999.738 ; gain = 42.562
+Ending Final Cleanup Task | Checksum: 1702aa6c4
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1999.738 ; gain = 42.562
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1999.738 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+65 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1999.738 ; gain = 512.836
+INFO: [Vivado 12-24828] Executing command : report_drc -file driverSystem_wrapper_drc_opted.rpt -pb driverSystem_wrapper_drc_opted.pb -rpx driverSystem_wrapper_drc_opted.rpx
+Command: report_drc -file driverSystem_wrapper_drc_opted.rpt -pb driverSystem_wrapper_drc_opted.pb -rpx driverSystem_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1/driverSystem_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1999.738 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1/driverSystem_wrapper_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7s25'
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 14b0c9bde
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+CRITICAL WARNING: [Place 30-73] Invalid constraint on register 'driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG'. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1baac629c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.555 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 2b678a3e9
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 2b678a3e9
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 2b678a3e9
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 2e4ec72e4
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 2de8798b2
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 2de8798b2
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 3621b629b
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 2f8d2eb17
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 71 LUTNM shape to break, 216 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 18, two critical 53, total 71, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 168 nets or LUTs. Breaked 71 LUTs, combined 97 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           71  |             97  |                   168  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           71  |             97  |                   168  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 3423b1ed1
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Phase 2.5 Global Place Phase2 | Checksum: 2e66db4e6
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 2e66db4e6
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 2f5d9dd77
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 23c219a00
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:17 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 2b7067f30
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 31b78b8d2
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 2f6baff2a
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:19 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 2e1294f9f
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:23 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 2ce6c6de2
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:23 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 32a50d321
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:23 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 248099b2f
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:28 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 248099b2f
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:28 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 2575f8682
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.342 | TNS=-0.698 |
+Phase 1 Physical Synthesis Initialization | Checksum: 176588d70
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.265 . Memory (MB): peak = 1999.738 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 1beef1a27
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.301 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 2575f8682
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:30 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.345. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 2596e73d6
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:36 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:36 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 2596e73d6
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:36 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 2596e73d6
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:36 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 2596e73d6
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:36 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 2596e73d6
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:36 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:36 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2b0af897a
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:36 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Ending Placer Task | Checksum: 1c03db90c
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:36 . Memory (MB): peak = 1999.738 ; gain = 0.000
+105 Infos, 10 Warnings, 1 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:39 . Memory (MB): peak = 1999.738 ; gain = 0.000
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_io -file driverSystem_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1999.738 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file driverSystem_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1999.738 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file driverSystem_wrapper_utilization_placed.rpt -pb driverSystem_wrapper_utilization_placed.pb
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.240 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.301 . Memory (MB): peak = 1999.738 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1/driverSystem_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7s25'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1999.738 ; gain = 0.000
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 0.345 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+116 Infos, 10 Warnings, 1 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.272 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.334 . Memory (MB): peak = 1999.738 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1/driverSystem_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7s25'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 42488f49 ConstDB: 0 ShapeSum: ab81fede RouteDB: d2732ae5
+Post Restoration Checksum: NetGraph: bb836dc8 | NumContArr: f23dc24a | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 33313254c
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 33313254c
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 33313254c
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1999.738 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 1e1cc423b
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1999.738 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.364  | TNS=0.000  | WHS=-0.482 | THS=-1220.079|
+
+
+Phase 2.4 Soft Constraint Pins - Fast Budgeting
+Phase 2.4 Soft Constraint Pins - Fast Budgeting | Checksum: 1c2ba59a5
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0056899 %
+  Global Horizontal Routing Utilization  = 0.000257998 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 7590
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 7590
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 1587b80dc
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 1587b80dc
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 24bf249c0
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Phase 4 Initial Routing | Checksum: 24bf249c0
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1999.738 ; gain = 0.000
+INFO: [Route 35-580] Design has 14 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++=====================================+=====================================+====================================================================================================+
+| Launch Setup Clock                  | Launch Hold Clock                   | Pin                                                                                                |
++=====================================+=====================================+====================================================================================================+
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L3/neuron_n/count_reg[7]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L3/neuron_n/count_reg[8]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L3/neuron_n/count_reg[6]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L2/neuron_n/count_reg[8]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L1/neuron_n/count_reg[9]/D |
++-------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 1409
+ Number of Nodes with overlaps = 488
+ Number of Nodes with overlaps = 231
+ Number of Nodes with overlaps = 113
+ Number of Nodes with overlaps = 44
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.006 | TNS=-0.006 | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 33a95a06f
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 311
+ Number of Nodes with overlaps = 105
+ Number of Nodes with overlaps = 52
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.169  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 2deac3dbb
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:35 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Phase 5 Rip-up And Reroute | Checksum: 2deac3dbb
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:35 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+Phase 6.1 Delay CleanUp | Checksum: 2deac3dbb
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:35 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 2deac3dbb
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:35 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Phase 6 Delay and Skew Optimization | Checksum: 2deac3dbb
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:35 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.248  | TNS=0.000  | WHS=0.007  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 2a50c4712
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:35 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Phase 7 Post Hold Fix | Checksum: 2a50c4712
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:35 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 5.68706 %
+  Global Horizontal Routing Utilization  = 8.69247 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 2a50c4712
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:35 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 2a50c4712
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:35 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 1d5160b57
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:36 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 11 Post Process Routing
+Phase 11 Post Process Routing | Checksum: 1d5160b57
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:36 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Phase 12 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.248  | TNS=0.000  | WHS=0.007  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 12 Post Router Timing | Checksum: 1d5160b57
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:36 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Total Elapsed time in route_design: 36.118 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: 12aa2cae2
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:36 . Memory (MB): peak = 1999.738 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 12aa2cae2
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:36 . Memory (MB): peak = 1999.738 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+129 Infos, 10 Warnings, 1 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:36 . Memory (MB): peak = 1999.738 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_drc -file driverSystem_wrapper_drc_routed.rpt -pb driverSystem_wrapper_drc_routed.pb -rpx driverSystem_wrapper_drc_routed.rpx
+Command: report_drc -file driverSystem_wrapper_drc_routed.rpt -pb driverSystem_wrapper_drc_routed.pb -rpx driverSystem_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1/driverSystem_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file driverSystem_wrapper_methodology_drc_routed.rpt -pb driverSystem_wrapper_methodology_drc_routed.pb -rpx driverSystem_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file driverSystem_wrapper_methodology_drc_routed.rpt -pb driverSystem_wrapper_methodology_drc_routed.pb -rpx driverSystem_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1/driverSystem_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -routable_nets -report_unconstrained -file driverSystem_wrapper_timing_summary_routed.rpt -pb driverSystem_wrapper_timing_summary_routed.pb -rpx driverSystem_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file driverSystem_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file driverSystem_wrapper_route_status.rpt -pb driverSystem_wrapper_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file driverSystem_wrapper_power_routed.rpt -pb driverSystem_wrapper_power_summary_routed.pb -rpx driverSystem_wrapper_power_routed.rpx
+Command: report_power -file driverSystem_wrapper_power_routed.rpt -pb driverSystem_wrapper_power_summary_routed.pb -rpx driverSystem_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+146 Infos, 11 Warnings, 1 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file driverSystem_wrapper_clock_utilization_routed.rpt
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file driverSystem_wrapper_bus_skew_routed.rpt -pb driverSystem_wrapper_bus_skew_routed.pb -rpx driverSystem_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+generate_parallel_reports: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1999.738 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.095 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.234 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.361 . Memory (MB): peak = 1999.738 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1/driverSystem_wrapper_routed.dcp' has been generated.
+INFO: [Memdata 28-167] Found XPM memory block driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+Command: write_bitstream -force driverSystem_wrapper.bit
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7s25'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Integrating Hard IP ELF/MEM with the PDI.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Initializing bitstream generation complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.987 . Memory (MB): peak = 1999.738 ; gain = 0.000
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./driverSystem_wrapper.bit...
+Generate Bitstream complete. Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2212.352 ; gain = 212.613
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+162 Infos, 11 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 2212.352 ; gain = 212.613
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  4 19:57:27 2026...

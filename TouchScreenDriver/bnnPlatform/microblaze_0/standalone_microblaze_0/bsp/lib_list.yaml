@@ -1,0 +1,55 @@
+microblaze_0:
+  standalone:
+    xilflash:
+      description: Xilinx Flash library for Intel/AMD CFI compliant parallel flash.
+      depends_libs: []
+      path:
+      - C:\AMDDesignTools\2026.1\Vitis\data\embeddedsw\lib\sw_services\xilflash_v4_13
+      examples:
+        xilflash_devicecontrol_example.c: []
+        xilflash_platform_flash_example.c: []
+        xilflash_protection_example.c: []
+        xilflash_readwrite_example.c: []
+    xilskey:
+      description: Xilinx Secure Key Library supports programming efuse and bbram.
+      depends_libs: []
+      path:
+      - C:\AMDDesignTools\2026.1\Vitis\data\embeddedsw\lib\sw_services\xilskey_v7_9
+      examples:
+        xilskey_efuse_example.c:
+        - xilskey_input.h
+        xilskey_bbram_ultrascale_example.c:
+        - xilskey_bbram_ultrascale_input.h
+    xiltimer:
+      description: Xiltimer library provides generic timer interface for the timer IP's.
+      depends_libs: []
+      path:
+      - C:\AMDDesignTools\2026.1\Vitis\data\embeddedsw\lib\sw_services\xiltimer_v2_4
+      examples: {}
+  freertos:
+    xilflash:
+      description: Xilinx Flash library for Intel/AMD CFI compliant parallel flash.
+      depends_libs: []
+      path:
+      - C:\AMDDesignTools\2026.1\Vitis\data\embeddedsw\lib\sw_services\xilflash_v4_13
+      examples:
+        xilflash_devicecontrol_example.c: []
+        xilflash_platform_flash_example.c: []
+        xilflash_protection_example.c: []
+        xilflash_readwrite_example.c: []
+    xilskey:
+      description: Xilinx Secure Key Library supports programming efuse and bbram.
+      depends_libs: []
+      path:
+      - C:\AMDDesignTools\2026.1\Vitis\data\embeddedsw\lib\sw_services\xilskey_v7_9
+      examples:
+        xilskey_efuse_example.c:
+        - xilskey_input.h
+        xilskey_bbram_ultrascale_example.c:
+        - xilskey_bbram_ultrascale_input.h
+    xiltimer:
+      description: Xiltimer library provides generic timer interface for the timer IP's.
+      depends_libs: []
+      path:
+      - C:\AMDDesignTools\2026.1\Vitis\data\embeddedsw\lib\sw_services\xiltimer_v2_4
+      examples: {}

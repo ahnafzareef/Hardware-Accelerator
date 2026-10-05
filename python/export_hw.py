@@ -3,7 +3,7 @@ import numpy as np
 
 CHUNK   = 64
 OUT_DIR = "weights/hw"
-IDX     = 0       
+IDX     = 7;      
 
 
 def n_chunks(n_in):
@@ -44,7 +44,7 @@ def write_test_image(path):
     x = np.where(img.flatten() >= 0, 1, -1)            
     with open(path, "w") as f:
         f.write(bits(x) + "\n")
-    print(f"wrote {path}: picture {IDX}, it's a {labels[IDX]}")
+    print(f"wrote {path}: picture {IDX}, it's a {labels[IDX]}") #check number
 
 
 if __name__ == "__main__":

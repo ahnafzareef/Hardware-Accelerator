@@ -1,0 +1,61 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Sun Oct  4 19:56:56 2026
+| Host         : LAPTOP-E4LD1OHV running 64-bit major release  (build 9200)
+| Command      : report_drc -file driverSystem_wrapper_drc_routed.rpt -pb driverSystem_wrapper_drc_routed.pb -rpx driverSystem_wrapper_drc_routed.rpx
+| Design       : driverSystem_wrapper
+| Device       : xc7s25csga324-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 3
++-----------+----------+------------------------------------------------+--------+
+| Rule      | Severity | Description                                    | Checks |
++-----------+----------+------------------------------------------------+--------+
+| PLIO-6    | Warning  | Placement Constraints Check for IO constraints | 1      |
+| REQP-1617 | Warning  | use_IOB_register                               | 1      |
+| RTSTAT-10 | Warning  | No routable loads                              | 1      |
++-----------+----------+------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+PLIO-6#1 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+REQP-1617#1 Warning
+use_IOB_register  
+The FDRE cell driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+12 net(s) have no routable loads. The problem bus(es) and/or net(s) are driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp[0],
+driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/INTERRUPT_CONTROL_I/ip2intc_irpt,
+driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/io0_t,
+driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/io1_t,
+driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/sck_t,
+driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/ss_t,
+driverSystem_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Byte_Doublet_Handle_gti_I/M_AXI_DP_WSTRB[3:0],
+driverSystem_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/M_AXI_DP_ARADDR[0]
+driverSystem_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Decode_I/M_AXI_DP_ARADDR[1].
+Related violations: <none>
+
+

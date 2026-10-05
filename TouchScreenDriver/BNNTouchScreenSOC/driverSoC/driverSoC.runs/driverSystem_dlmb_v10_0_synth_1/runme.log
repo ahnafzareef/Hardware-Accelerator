@@ -1,0 +1,42 @@
+
+*** Running vivado
+    with args -log driverSystem_dlmb_v10_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source driverSystem_dlmb_v10_0.tcl
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 15-jul-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sun Jul 26 14:41:08 2026
+# Process ID         : 19916
+# Current directory  : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_dlmb_v10_0_synth_1
+# Command line       : vivado.exe -log driverSystem_dlmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source driverSystem_dlmb_v10_0.tcl
+# Log file           : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_dlmb_v10_0_synth_1/driverSystem_dlmb_v10_0.vds
+# Journal file       : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_dlmb_v10_0_synth_1\vivado.jou
+# Running On         : LAPTOP-E4LD1OHV
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16438 MB
+# Swap memory        : 24715 MB
+# Total Virtual      : 41154 MB
+# Available Virtual  : 10742 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Sun Jul 26 14:41:08 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source driverSystem_dlmb_v10_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 628.273 ; gain = 304.199
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP driverSystem_dlmb_v10_0, cache-ID = 49741e3b0c658a13.
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 26 14:41:24 2026...

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sun Oct  4 19:44:30 2026
+# Process ID         : 52864
+# Current directory  : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1
+# Command line       : vivado.exe -log driverSystem_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source driverSystem_wrapper.tcl -notrace
+# Log file           : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1/driverSystem_wrapper.vdi
+# Journal file       : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1\vivado.jou
+# Running On         : LAPTOP-E4LD1OHV
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16438 MB
+# Swap memory        : 31041 MB
+# Total Virtual      : 47479 MB
+# Available Virtual  : 7032 MB
+#-----------------------------------------------------------
+source driverSystem_wrapper.tcl -notrace

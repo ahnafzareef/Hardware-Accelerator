@@ -1,0 +1,372 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 15-jul-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sun Jul 26 14:51:30 2026
+# Process ID         : 40488
+# Current directory  : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_axi_uartlite_0_0_synth_1
+# Command line       : vivado.exe -log driverSystem_axi_uartlite_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source driverSystem_axi_uartlite_0_0.tcl
+# Log file           : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_axi_uartlite_0_0_synth_1/driverSystem_axi_uartlite_0_0.vds
+# Journal file       : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_axi_uartlite_0_0_synth_1\vivado.jou
+# Running On         : LAPTOP-E4LD1OHV
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16438 MB
+# Swap memory        : 24702 MB
+# Total Virtual      : 41141 MB
+# Available Virtual  : 16246 MB
+#-----------------------------------------------------------
+source driverSystem_axi_uartlite_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 630.816 ; gain = 305.793
+Command: synth_design -top driverSystem_axi_uartlite_0_0 -part xc7s25csga324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7s25'
+INFO: [Device 21-403] Loading part xc7s25csga324-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 33052
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1373.180 ; gain = 577.590
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'driverSystem_axi_uartlite_0_0' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_uartlite_0_0/synth/driverSystem_axi_uartlite_0_0.vhd:86]
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_BAUDRATE bound to: 115200 - type: integer 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_uartlite' declared at 'c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/b7ff/hdl/axi_uartlite_v2_0_rfs.vhd:1951' bound to instance 'U0' of component 'axi_uartlite' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_uartlite_0_0/synth/driverSystem_axi_uartlite_0_0.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'axi_uartlite' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/b7ff/hdl/axi_uartlite_v2_0_rfs.vhd:2013]
+INFO: [Synth 8-638] synthesizing module 'uartlite_core' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/b7ff/hdl/axi_uartlite_v2_0_rfs.vhd:1479]
+INFO: [Synth 8-638] synthesizing module 'baudrate' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/b7ff/hdl/axi_uartlite_v2_0_rfs.vhd:1288]
+INFO: [Synth 8-256] done synthesizing module 'baudrate' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/b7ff/hdl/axi_uartlite_v2_0_rfs.vhd:1288]
+INFO: [Synth 8-638] synthesizing module 'uartlite_rx' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/b7ff/hdl/axi_uartlite_v2_0_rfs.vhd:794]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'INPUT_DOUBLE_REGS3' of component 'xpm_cdc_single' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/b7ff/hdl/axi_uartlite_v2_0_rfs.vhd:854]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/b7ff/hdl/axi_uartlite_v2_0_rfs.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/b7ff/hdl/axi_uartlite_v2_0_rfs.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_rx' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/b7ff/hdl/axi_uartlite_v2_0_rfs.vhd:794]
+INFO: [Synth 8-638] synthesizing module 'uartlite_tx' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/b7ff/hdl/axi_uartlite_v2_0_rfs.vhd:306]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_tx' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/b7ff/hdl/axi_uartlite_v2_0_rfs.vhd:306]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_core' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/b7ff/hdl/axi_uartlite_v2_0_rfs.vhd:1479]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2341]
+INFO: [Synth 8-3919] null assignment ignored [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2370]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_uartlite' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/b7ff/hdl/axi_uartlite_v2_0_rfs.vhd:2013]
+INFO: [Synth 8-256] done synthesizing module 'driverSystem_axi_uartlite_0_0' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_uartlite_0_0/synth/driverSystem_axi_uartlite_0_0.vhd:86]
+INFO: [Synth 8-6014] Unused sequential element is_read_reg was removed.  [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2447]
+INFO: [Synth 8-6014] Unused sequential element is_write_reg was removed.  [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/de33/hdl/axi_lite_ipif_v3_1_rfs.vhd:2448]
+INFO: [Synth 8-7129] Port Address_In_Erly[2] in module address_decoder is either unconnected or has no load
+INFO: [Synth 8-7129] Port Address_In_Erly[3] in module address_decoder is either unconnected or has no load
+INFO: [Synth 8-7129] Port Bus_RNW in module address_decoder is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WSTRB[3] in module slave_attachment is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WSTRB[2] in module slave_attachment is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WSTRB[1] in module slave_attachment is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WSTRB[0] in module slave_attachment is either unconnected or has no load
+INFO: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+INFO: [Synth 8-7129] Port bus2ip_cs in module uartlite_core is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1506.387 ; gain = 710.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1506.387 ; gain = 710.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1506.387 ; gain = 710.797
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1506.387 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_uartlite_0_0/driverSystem_axi_uartlite_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_uartlite_0_0/driverSystem_axi_uartlite_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_uartlite_0_0/driverSystem_axi_uartlite_0_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_uartlite_0_0/driverSystem_axi_uartlite_0_0_board.xdc] for cell 'U0'
+Parsing XDC File [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_axi_uartlite_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_axi_uartlite_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/AMDDesignTools/2026.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/driverSystem_axi_uartlite_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/driverSystem_axi_uartlite_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1569.305 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1570.598 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1570.598 ; gain = 775.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s25csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1570.598 ; gain = 775.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1570.598 ; gain = 775.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 sm_idle |                             0010 |                               00
+                 sm_read |                             1000 |                               01
+                sm_write |                             0100 |                               10
+                 sm_resp |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1570.598 ; gain = 775.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 52    
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 37    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 90 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[31] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[30] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[29] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[28] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[27] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[26] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[25] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[24] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[23] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[22] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[21] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[20] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[19] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[18] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[17] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[16] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[15] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[14] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[13] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[12] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[11] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[10] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[9] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wdata[8] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wstrb[3] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wstrb[2] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wstrb[1] in module axi_uartlite is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wstrb[0] in module axi_uartlite is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1578.023 ; gain = 782.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1717.184 ; gain = 921.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1749.254 ; gain = 953.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1749.254 ; gain = 953.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2003.539 ; gain = 1207.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2003.539 ; gain = 1207.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2003.539 ; gain = 1207.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2003.539 ; gain = 1207.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2003.539 ; gain = 1207.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2003.539 ; gain = 1207.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|axi_uartlite | UARTLITE_CORE_I/UARTLITE_RX_I/data_shift_reg[15] | 16     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|axi_uartlite | UARTLITE_CORE_I/UARTLITE_TX_I/data_shift_reg[15] | 15     | 1     | YES          | NO                 | YES               | 1      | 0       | 
++-------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+--------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name     | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+--------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | data_reg[15] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
++------------+--------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |LUT1   |     2|
+|2     |LUT2   |    12|
+|3     |LUT3   |    11|
+|4     |LUT4   |    26|
+|5     |LUT5   |    23|
+|6     |LUT6   |    26|
+|7     |MUXF7  |     1|
+|8     |SRL16E |    18|
+|9     |FDRE   |    92|
+|10    |FDSE   |    18|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2003.539 ; gain = 1207.949
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 2003.539 ; gain = 1143.738
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 2003.539 ; gain = 1207.949
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2012.734 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2016.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 38eea871
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+94 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:01:01 . Memory (MB): peak = 2016.395 ; gain = 1371.402
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2016.395 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_axi_uartlite_0_0_synth_1/driverSystem_axi_uartlite_0_0.dcp' has been generated.
+INFO: [Ipptcl 7-1612] Added synthesis output to IP cache for IP driverSystem_axi_uartlite_0_0, cache-ID = c1d2234b9fbe57f4
+INFO: [Coretcl 2-1174] Renamed 13 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2016.395 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_axi_uartlite_0_0_synth_1/driverSystem_axi_uartlite_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file driverSystem_axi_uartlite_0_0_utilization_synth.rpt -pb driverSystem_axi_uartlite_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 26 14:52:59 2026...

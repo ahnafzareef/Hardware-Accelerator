@@ -1,0 +1,42 @@
+# ---- Vivado generated project directories (top-level and nested sub-projects) ----
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.gen/
+*.tmp/
+.Xil/
+
+# ---- Vivado logs, journals, waveform/debug, and lock files ----
+*.jou
+*.backup.jou
+*.backup.log
+vivado.log
+vivado_pid*.str
+webtalk_pa.xml
+webtalk.log
+
+# ---- Vitis/SDK (microblaze app + platform) build & export outputs ----
+# (TouchScreenDriver/bnn_touch and TouchScreenDriver/bnnPlatform already carry
+#  their own more specific .gitignore files; these are repo-wide backstops)
+/build/
+/export/
+/logs/
+*.o
+*.d
+*.lock
+*.bin
+*.pdi
+.vitisWorkspace.json
+_ide/logs/
+_ide/.wsdata/
+
+# ---- Python ----
+__pycache__/
+*.pyc
+
+# ---- OS / editor cruft ----
+.DS_Store
+Thumbs.db
+*.swp

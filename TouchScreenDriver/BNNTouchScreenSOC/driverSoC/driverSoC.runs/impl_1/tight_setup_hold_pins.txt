@@ -1,0 +1,18 @@
++=====================================+=====================================+====================================================================================================+
+| Launch Setup Clock                  | Launch Hold Clock                   | Pin                                                                                                |
++=====================================+=====================================+====================================================================================================+
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L3/neuron_n/count_reg[7]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L3/neuron_n/count_reg[8]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L3/neuron_n/count_reg[6]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L2/neuron_n/count_reg[8]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L1/neuron_n/count_reg[9]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L2/neuron_n/count_reg[7]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L3/neuron_n/count_reg[5]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L1/neuron_n/count_reg[7]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L1/neuron_n/count_reg[8]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L2/neuron_n/count_reg[6]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L2/neuron_n/count_reg[5]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L1/neuron_n/count_reg[6]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L1/neuron_n/count_reg[5]/D |
+| clk_out1_driverSystem_clk_wiz_1_0_1 | clk_out1_driverSystem_clk_wiz_1_0_1 | driverSystem_i/bnn_axi_0/inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L3/neuron_n/count_reg[4]/D |
++-------------------------------------+-------------------------------------+----------------------------------------------------------------------------------------------------+

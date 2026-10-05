@@ -1,0 +1,20 @@
+[
+  {
+    "directory": "C:/VitisProjects/ILI9341Driver/bnn_touch/build",
+    "file": "C:\\VitisProjects\\ILI9341Driver\\bnn_touch\\src\\ILI9341_XIL.c",
+    "output": "CMakeFiles\\bnn_touch.elf.dir\\ILI9341_XIL.c.obj",
+    "command": "C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\mb-gcc.exe -IC:/VitisProjects/ILI9341Driver/bnn_touch/src -isystem C:/VitisProjects/ILI9341Driver/bnnPlatform/export/bnnPlatform/sw/standalone_microblaze_0/include -isystem C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include -isystem C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed -isystem C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include   -mlittle-endian -mxl-soft-mul -mcpu\u003dv11.0 -DSDT  -MMD -MP -specs\u003dC:/VitisProjects/ILI9341Driver/bnnPlatform/export/bnnPlatform/sw/standalone_microblaze_0/Xilinx.spec -IC:/VitisProjects/ILI9341Driver/bnnPlatform/export/bnnPlatform/sw/standalone_microblaze_0/include -Wall -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\bnn_touch.elf.dir\\ILI9341_XIL.c.obj -c C:\\VitisProjects\\ILI9341Driver\\bnn_touch\\src\\ILI9341_XIL.c -D__MICROBLAZE__"
+  },
+  {
+    "directory": "C:/VitisProjects/ILI9341Driver/bnn_touch/build",
+    "file": "C:\\VitisProjects\\ILI9341Driver\\bnn_touch\\src\\main.c",
+    "output": "CMakeFiles\\bnn_touch.elf.dir\\main.c.obj",
+    "command": "C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\mb-gcc.exe -IC:/VitisProjects/ILI9341Driver/bnn_touch/src -isystem C:/VitisProjects/ILI9341Driver/bnnPlatform/export/bnnPlatform/sw/standalone_microblaze_0/include -isystem C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include -isystem C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed -isystem C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include   -mlittle-endian -mxl-soft-mul -mcpu\u003dv11.0 -DSDT  -MMD -MP -specs\u003dC:/VitisProjects/ILI9341Driver/bnnPlatform/export/bnnPlatform/sw/standalone_microblaze_0/Xilinx.spec -IC:/VitisProjects/ILI9341Driver/bnnPlatform/export/bnnPlatform/sw/standalone_microblaze_0/include -Wall -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\bnn_touch.elf.dir\\main.c.obj -c C:\\VitisProjects\\ILI9341Driver\\bnn_touch\\src\\main.c -D__MICROBLAZE__"
+  },
+  {
+    "directory": "C:/VitisProjects/ILI9341Driver/bnn_touch/build",
+    "file": "C:\\VitisProjects\\ILI9341Driver\\bnn_touch\\src\\xpt2046.c",
+    "output": "CMakeFiles\\bnn_touch.elf.dir\\xpt2046.c.obj",
+    "command": "C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\mb-gcc.exe -IC:/VitisProjects/ILI9341Driver/bnn_touch/src -isystem C:/VitisProjects/ILI9341Driver/bnnPlatform/export/bnnPlatform/sw/standalone_microblaze_0/include -isystem C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include -isystem C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed -isystem C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include   -mlittle-endian -mxl-soft-mul -mcpu\u003dv11.0 -DSDT  -MMD -MP -specs\u003dC:/VitisProjects/ILI9341Driver/bnnPlatform/export/bnnPlatform/sw/standalone_microblaze_0/Xilinx.spec -IC:/VitisProjects/ILI9341Driver/bnnPlatform/export/bnnPlatform/sw/standalone_microblaze_0/include -Wall -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\bnn_touch.elf.dir\\xpt2046.c.obj -c C:\\VitisProjects\\ILI9341Driver\\bnn_touch\\src\\xpt2046.c -D__MICROBLAZE__"
+  }
+]

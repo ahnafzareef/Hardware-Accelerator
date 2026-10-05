@@ -1,0 +1,253 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 15-jul-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sun Jul 26 14:39:52 2026
+# Process ID         : 37572
+# Current directory  : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_clk_wiz_1_0_synth_1
+# Command line       : vivado.exe -log driverSystem_clk_wiz_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source driverSystem_clk_wiz_1_0.tcl
+# Log file           : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_clk_wiz_1_0_synth_1/driverSystem_clk_wiz_1_0.vds
+# Journal file       : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_clk_wiz_1_0_synth_1\vivado.jou
+# Running On         : LAPTOP-E4LD1OHV
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16438 MB
+# Swap memory        : 24715 MB
+# Total Virtual      : 41154 MB
+# Available Virtual  : 16095 MB
+#-----------------------------------------------------------
+source driverSystem_clk_wiz_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 629.352 ; gain = 306.164
+Command: synth_design -top driverSystem_clk_wiz_1_0 -part xc7s25csga324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7s25'
+INFO: [Device 21-403] Loading part xc7s25csga324-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 41512
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1371.289 ; gain = 577.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_clk_wiz_1_0' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0.v:66]
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_clk_wiz_1_0_clk_wiz' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0_clk_wiz.v:66]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:82818]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:82818]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:95724]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 6.250000e+01 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000e+00 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 8.333300e+01 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 7.500000e+00 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 5.000000e-01 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000e+00 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:95724]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_clk_wiz_1_0_clk_wiz' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0_clk_wiz.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_clk_wiz_1_0' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0.v:66]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1497.137 ; gain = 702.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1497.137 ; gain = 702.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1497.137 ; gain = 702.965
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1497.137 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0_board.xdc] for cell 'inst'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/driverSystem_clk_wiz_1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/driverSystem_clk_wiz_1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_clk_wiz_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_clk_wiz_1_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1497.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1497.137 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1497.137 ; gain = 702.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s25csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1497.137 ; gain = 702.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1497.137 ; gain = 702.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1497.137 ; gain = 702.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 90 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1540.004 ; gain = 745.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1699.223 ; gain = 905.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1699.297 ; gain = 905.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1708.883 ; gain = 914.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1985.102 ; gain = 1190.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1985.102 ; gain = 1190.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1985.102 ; gain = 1190.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1985.102 ; gain = 1190.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1985.102 ; gain = 1190.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1985.102 ; gain = 1190.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |LUT1       |     1|
+|3     |MMCME2_ADV |     1|
+|4     |IBUF       |     1|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1985.102 ; gain = 1190.930
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 1985.102 ; gain = 1190.930
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1985.102 ; gain = 1190.930
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1985.102 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1992.914 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 4b4d1638
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+30 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1992.918 ; gain = 1350.699
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1992.918 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_clk_wiz_1_0_synth_1/driverSystem_clk_wiz_1_0.dcp' has been generated.
+INFO: [Ipptcl 7-1612] Added synthesis output to IP cache for IP driverSystem_clk_wiz_1_0, cache-ID = c1a2f682f85abd59
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1992.918 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_clk_wiz_1_0_synth_1/driverSystem_clk_wiz_1_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file driverSystem_clk_wiz_1_0_utilization_synth.rpt -pb driverSystem_clk_wiz_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 26 14:41:05 2026...

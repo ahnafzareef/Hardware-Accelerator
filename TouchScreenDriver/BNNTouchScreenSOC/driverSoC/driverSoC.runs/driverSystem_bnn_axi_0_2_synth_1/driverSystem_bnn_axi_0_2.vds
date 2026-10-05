@@ -1,0 +1,413 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 15-jul-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sun Oct  4 19:40:52 2026
+# Process ID         : 19464
+# Current directory  : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_bnn_axi_0_2_synth_1
+# Command line       : vivado.exe -log driverSystem_bnn_axi_0_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source driverSystem_bnn_axi_0_2.tcl
+# Log file           : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_bnn_axi_0_2_synth_1/driverSystem_bnn_axi_0_2.vds
+# Journal file       : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_bnn_axi_0_2_synth_1\vivado.jou
+# Running On         : LAPTOP-E4LD1OHV
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16438 MB
+# Swap memory        : 31041 MB
+# Total Virtual      : 47479 MB
+# Available Virtual  : 6611 MB
+#-----------------------------------------------------------
+source driverSystem_bnn_axi_0_2.tcl -notrace
+create_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 631.102 ; gain = 307.602
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+Command: synth_design -top driverSystem_bnn_axi_0_2 -part xc7s25csga324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7s25'
+INFO: [Device 21-403] Loading part xc7s25csga324-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17432
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1369.566 ; gain = 577.379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_bnn_axi_0_2' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_bnn_axi_0_2/synth/driverSystem_bnn_axi_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bnn_axi' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/hdl/bnn_axi.v:4]
+INFO: [Synth 8-6157] synthesizing module 'bnn_axi_slave_lite_v1_0_S00_AXI' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/hdl/bnn_axi_slave_lite_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/hdl/bnn_axi_slave_lite_v1_0_S00_AXI.v:135]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/hdl/bnn_axi_slave_lite_v1_0_S00_AXI.v:211]
+INFO: [Synth 8-6157] synthesizing module 'bnn_core' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/bnn_core.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'layer' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/layer.sv:23]
+INFO: [Synth 8-3876] $readmem data file 'layer1_thresh.mem' is read successfully [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/layer.sv:68]
+INFO: [Synth 8-6157] synthesizing module 'weight_mem' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/weight_mem.sv:22]
+INFO: [Synth 8-3876] $readmem data file 'layer1_weights.mem' is read successfully [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/weight_mem.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'weight_mem' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/weight_mem.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'neuron' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/neuron.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'neuron' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/neuron.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'layer' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/layer.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'layer__parameterized0' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/layer.sv:23]
+INFO: [Synth 8-3876] $readmem data file 'layer2_thresh.mem' is read successfully [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/layer.sv:68]
+INFO: [Synth 8-6157] synthesizing module 'weight_mem__parameterized0' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/weight_mem.sv:22]
+INFO: [Synth 8-3876] $readmem data file 'layer2_weights.mem' is read successfully [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/weight_mem.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'weight_mem__parameterized0' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/weight_mem.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'neuron__parameterized0' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/neuron.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'neuron__parameterized0' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/neuron.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'layer__parameterized0' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/layer.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'layer__parameterized1' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/layer.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'weight_mem__parameterized1' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/weight_mem.sv:22]
+INFO: [Synth 8-3876] $readmem data file 'layer3_weights.mem' is read successfully [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/weight_mem.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'weight_mem__parameterized1' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/weight_mem.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'layer__parameterized1' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/layer.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_core' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/bnn_core.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_axi_slave_lite_v1_0_S00_AXI' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/hdl/bnn_axi_slave_lite_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bnn_axi' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/hdl/bnn_axi.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_bnn_axi_0_2' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_bnn_axi_0_2/synth/driverSystem_bnn_axi_0_2.v:53]
+WARNING: [Synth 8-6014] Unused sequential element best_count_reg was removed.  [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/layer.sv:129]
+WARNING: [Synth 8-6014] Unused sequential element best_count_reg was removed.  [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/layer.sv:129]
+WARNING: [Synth 8-3848] Net output_bits in module/entity layer__parameterized1 does not have driver. [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/0cd5/src/layer.sv:42]
+INFO: [Synth 8-7129] Port output_bits[9] in module layer__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port output_bits[8] in module layer__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port output_bits[7] in module layer__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port output_bits[6] in module layer__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port output_bits[5] in module layer__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port output_bits[4] in module layer__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port output_bits[3] in module layer__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port output_bits[2] in module layer__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port output_bits[1] in module layer__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port output_bits[0] in module layer__parameterized1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWPROT[2] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWPROT[1] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWPROT[0] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WSTRB[3] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WSTRB[2] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WSTRB[1] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WSTRB[0] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARPROT[2] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARPROT[1] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARPROT[0] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1512.953 ; gain = 720.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1512.953 ; gain = 720.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1512.953 ; gain = 720.766
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1512.953 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1602.562 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.193 . Memory (MB): peak = 1602.562 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1602.562 ; gain = 810.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s25csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1602.562 ; gain = 810.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1602.562 ; gain = 810.375
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'layer'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'layer__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'layer__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'bnn_axi_slave_lite_v1_0_S00_AXI'
+INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'bnn_axi_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                    LOAD |                              001 |                              001
+                   CLEAR |                              010 |                              010
+                     RUN |                              011 |                              011
+                    WAIT |                              100 |                              100
+                   CHECK |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'layer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                    LOAD |                              001 |                              001
+                   CLEAR |                              010 |                              010
+                     RUN |                              011 |                              011
+                    WAIT |                              100 |                              100
+                   CHECK |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'layer__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                    LOAD |                              001 |                              001
+                   CLEAR |                              010 |                              010
+                     RUN |                              011 |                              011
+                    WAIT |                              100 |                              100
+                   CHECK |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'layer__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Waddr |                               01 |                               10
+                   Wdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_write_reg' using encoding 'sequential' in module 'bnn_axi_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Raddr |                               01 |                               10
+                   Rdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using encoding 'sequential' in module 'bnn_axi_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1602.562 ; gain = 810.375
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 2     
+	  64 Input    7 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input     64 Bit         XORs := 3     
++---Registers : 
+	              784 Bit    Registers := 1     
+	              256 Bit    Registers := 4     
+	               64 Bit    Registers := 6     
+	               32 Bit    Registers := 25    
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 13    
++---ROMs : 
+	                    ROMs := 5     
++---Muxes : 
+	   6 Input  256 Bit        Muxes := 2     
+	   2 Input  256 Bit        Muxes := 2     
+	   4 Input   64 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 2     
+	   3 Input   32 Bit        Muxes := 1     
+	   6 Input    9 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 3     
+	   6 Input    3 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 3     
+	   6 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 5     
+	   6 Input    1 Bit        Muxes := 19    
+	   2 Input    1 Bit        Muxes := 34    
+	   3 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 90 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7129] Port S_AXI_AWPROT[2] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWPROT[1] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_AWPROT[0] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WSTRB[3] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WSTRB[2] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WSTRB[1] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_WSTRB[0] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARPROT[2] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARPROT[1] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+INFO: [Synth 8-7129] Port S_AXI_ARPROT[0] in module bnn_axi_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1642.703 ; gain = 850.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+-----------------------+---------------+----------------+
+|Module Name | RTL Object            | Depth x Width | Implemented As | 
++------------+-----------------------+---------------+----------------+
+|layer       | count_neurons_reg_rep | 256x10        | Block RAM      | 
+|layer       | count_neurons_reg_rep | 256x7         | Block RAM      | 
++------------+-----------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:10 . Memory (MB): peak = 1642.703 ; gain = 850.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L1/wmem/data_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L1/wmem/data_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L1/wmem/data_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L1/wmem/data_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L1/wmem/data_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L1/wmem/data_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L1/wmem/data_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L1/wmem/data_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L1/count_neurons_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L2/wmem/data_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L2/wmem/data_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L2/count_neurons_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L3/wmem/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/bnn_axi_slave_lite_v1_0_S00_AXI_inst/core/L3/wmem/data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:06 ; elapsed = 00:01:12 . Memory (MB): peak = 1642.703 ; gain = 850.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 1849.605 ; gain = 1057.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 1849.605 ; gain = 1057.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:15 ; elapsed = 00:01:21 . Memory (MB): peak = 1849.605 ; gain = 1057.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:15 ; elapsed = 00:01:21 . Memory (MB): peak = 1849.605 ; gain = 1057.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:15 ; elapsed = 00:01:21 . Memory (MB): peak = 1851.566 ; gain = 1059.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:15 ; elapsed = 00:01:21 . Memory (MB): peak = 1851.566 ; gain = 1059.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    21|
+|2     |LUT1     |     1|
+|3     |LUT2     |    31|
+|4     |LUT3     |   152|
+|5     |LUT4     |   357|
+|6     |LUT5     |   185|
+|7     |LUT6     |  1303|
+|8     |MUXF7    |    64|
+|9     |RAMB18E1 |     2|
+|10    |RAMB36E1 |    11|
+|11    |FDRE     |  2919|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:21 . Memory (MB): peak = 1851.566 ; gain = 1059.379
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:01:16 . Memory (MB): peak = 1851.566 ; gain = 969.770
+Synthesis Optimization Complete : Time (s): cpu = 00:01:15 ; elapsed = 00:01:21 . Memory (MB): peak = 1851.594 ; gain = 1059.379
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1863.625 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 98 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1963.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d3724739
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+104 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:22 ; elapsed = 00:01:31 . Memory (MB): peak = 1965.031 ; gain = 1314.430
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1965.031 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_bnn_axi_0_2_synth_1/driverSystem_bnn_axi_0_2.dcp' has been generated.
+INFO: [Ipptcl 7-1612] Added synthesis output to IP cache for IP driverSystem_bnn_axi_0_2, cache-ID = 6e08b47d6541b92d
+INFO: [Coretcl 2-1174] Renamed 12 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1965.031 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_bnn_axi_0_2_synth_1/driverSystem_bnn_axi_0_2.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file driverSystem_bnn_axi_0_2_utilization_synth.rpt -pb driverSystem_bnn_axi_0_2_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  4 19:42:57 2026...

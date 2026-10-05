@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="driverSystem_rst_clk_wiz_1_100M_0_synth_1" LaunchDir="C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_rst_clk_wiz_1_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="driverSystem_axi_quad_spi_0_0_synth_1" LaunchDir="C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_axi_quad_spi_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="driverSystem_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="driverSystem_lmb_bram_0_synth_1" LaunchDir="C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="driverSystem_ilmb_bram_if_cntlr_0_synth_1" LaunchDir="C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_ilmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="driverSystem_ilmb_v10_0_synth_1" LaunchDir="C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_ilmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="driverSystem_dlmb_v10_0_synth_1" LaunchDir="C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_dlmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="driverSystem_ilmb_v10_0_synth_1"/>
+	</Run>
+	<Run Id="driverSystem_clk_wiz_1_0_synth_1" LaunchDir="C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_clk_wiz_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="driverSystem_axi_smc_0_synth_1" LaunchDir="C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_axi_smc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="driverSystem_microblaze_0_0_synth_1" LaunchDir="C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_microblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="driverSystem_axi_gpio_0_0_synth_1" LaunchDir="C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_axi_gpio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="driverSystem_mdm_1_0_synth_1" LaunchDir="C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_mdm_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="driverSystem_rst_clk_wiz_1_100M_0_synth_1"/>
+		<Parent Id="driverSystem_axi_quad_spi_0_0_synth_1"/>
+		<Parent Id="driverSystem_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="driverSystem_lmb_bram_0_synth_1"/>
+		<Parent Id="driverSystem_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="driverSystem_ilmb_v10_0_synth_1"/>
+		<Parent Id="driverSystem_dlmb_v10_0_synth_1"/>
+		<Parent Id="driverSystem_clk_wiz_1_0_synth_1"/>
+		<Parent Id="driverSystem_axi_smc_0_synth_1"/>
+		<Parent Id="driverSystem_microblaze_0_0_synth_1"/>
+		<Parent Id="driverSystem_axi_gpio_0_0_synth_1"/>
+		<Parent Id="driverSystem_mdm_1_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="driverSystem_rst_clk_wiz_1_100M_0_synth_1"/>
+		<Parent Id="driverSystem_axi_quad_spi_0_0_synth_1"/>
+		<Parent Id="driverSystem_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="driverSystem_lmb_bram_0_synth_1"/>
+		<Parent Id="driverSystem_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="driverSystem_ilmb_v10_0_synth_1"/>
+		<Parent Id="driverSystem_dlmb_v10_0_synth_1"/>
+		<Parent Id="driverSystem_clk_wiz_1_0_synth_1"/>
+		<Parent Id="driverSystem_axi_smc_0_synth_1"/>
+		<Parent Id="driverSystem_microblaze_0_0_synth_1"/>
+		<Parent Id="driverSystem_axi_gpio_0_0_synth_1"/>
+		<Parent Id="driverSystem_mdm_1_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+		<Parameter Name="general.usePosixSpawnForFork" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

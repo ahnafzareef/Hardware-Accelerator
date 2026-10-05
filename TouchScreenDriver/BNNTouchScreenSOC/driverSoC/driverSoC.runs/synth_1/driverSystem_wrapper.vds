@@ -1,0 +1,369 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 15-jul-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sun Oct  4 19:43:00 2026
+# Process ID         : 53864
+# Current directory  : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1
+# Command line       : vivado.exe -log driverSystem_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source driverSystem_wrapper.tcl
+# Log file           : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/driverSystem_wrapper.vds
+# Journal file       : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-E4LD1OHV
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16438 MB
+# Swap memory        : 31041 MB
+# Total Virtual      : 47479 MB
+# Available Virtual  : 6966 MB
+#-----------------------------------------------------------
+source driverSystem_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 629.191 ; gain = 304.734
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.srcs/sources_1/bd/driverSystem/driverSystem.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ driverSystem_xlslice_0_0
+driverSystem_xlslice_1_1
+driverSystem_xlslice_2_0
+Command: synth_design -top driverSystem_wrapper -part xc7s25csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7s25'
+INFO: [Device 21-403] Loading part xc7s25csga324-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 30804
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1401.473 ; gain = 576.957
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_wrapper' [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/hdl/driverSystem_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'driverSystem' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:13]
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_axi_gpio_0_0' [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_axi_gpio_0_0' (0#1) [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_axi_quad_spi_0_0' [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_axi_quad_spi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_axi_quad_spi_0_0' (0#1) [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_axi_quad_spi_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'io0_t' of module 'driverSystem_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:199]
+WARNING: [Synth 8-7071] port 'io1_o' of module 'driverSystem_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:199]
+WARNING: [Synth 8-7071] port 'io1_t' of module 'driverSystem_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:199]
+WARNING: [Synth 8-7071] port 'sck_t' of module 'driverSystem_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:199]
+WARNING: [Synth 8-7071] port 'ss_t' of module 'driverSystem_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:199]
+WARNING: [Synth 8-7071] port 'ip2intc_irpt' of module 'driverSystem_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:199]
+WARNING: [Synth 8-7023] instance 'axi_quad_spi_0' of module 'driverSystem_axi_quad_spi_0_0' has 33 connections declared, but only 27 given [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:199]
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_axi_smc_0' [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_axi_smc_0' (0#1) [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_axi_smc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'driverSystem_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:227]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'driverSystem_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:227]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'driverSystem_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:227]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'driverSystem_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:227]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'driverSystem_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:227]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'driverSystem_axi_smc_0' is unconnected for instance 'axi_smc' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:227]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'driverSystem_axi_smc_0' has 97 connections declared, but only 91 given [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:227]
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_axi_uartlite_0_0' [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_axi_uartlite_0_0' (0#1) [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'driverSystem_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:319]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'driverSystem_axi_uartlite_0_0' has 22 connections declared, but only 21 given [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:319]
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_bnn_axi_0_2' [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_bnn_axi_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_bnn_axi_0_2' (0#1) [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_bnn_axi_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_clk_wiz_1_0' [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_clk_wiz_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_clk_wiz_1_0' (0#1) [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_clk_wiz_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_mdm_1_0' [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_mdm_1_0' (0#1) [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_microblaze_0_0' [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_microblaze_0_0' (0#1) [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_microblaze_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'driverSystem_microblaze_0_0' is unconnected for instance 'microblaze_0' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:381]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'driverSystem_microblaze_0_0' has 52 connections declared, but only 51 given [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:381]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_14XAS9O' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:475]
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_dlmb_bram_if_cntlr_0' [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_dlmb_bram_if_cntlr_0' (0#1) [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_dlmb_v10_0' [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_dlmb_v10_0' (0#1) [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'driverSystem_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:600]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'driverSystem_dlmb_v10_0' has 25 connections declared, but only 24 given [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:600]
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_ilmb_bram_if_cntlr_0' [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_ilmb_bram_if_cntlr_0' (0#1) [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_ilmb_v10_0' [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_ilmb_v10_0' (0#1) [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'driverSystem_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:646]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'driverSystem_ilmb_v10_0' has 25 connections declared, but only 24 given [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:646]
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_lmb_bram_0' [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_lmb_bram_0' (0#1) [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'driverSystem_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:671]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'driverSystem_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:671]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'driverSystem_lmb_bram_0' has 16 connections declared, but only 14 given [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:671]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_14XAS9O' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:475]
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_rst_clk_wiz_1_100M_0' [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_rst_clk_wiz_1_100M_0' (0#1) [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/.Xil/Vivado-53864-LAPTOP-E4LD1OHV/realtime/driverSystem_rst_clk_wiz_1_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'driverSystem_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:455]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'driverSystem_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:455]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'driverSystem_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:455]
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_xlslice_0_0' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_xlslice_0_0/synth/driverSystem_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_5_xlslice' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/6792/hdl/xlslice_v1_0_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_5_xlslice' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/6792/hdl/xlslice_v1_0_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_xlslice_0_0' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_xlslice_0_0/synth/driverSystem_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_xlslice_1_1' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_xlslice_1_1/synth/driverSystem_xlslice_1_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_5_xlslice__parameterized0' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/6792/hdl/xlslice_v1_0_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_5_xlslice__parameterized0' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/6792/hdl/xlslice_v1_0_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_xlslice_1_1' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_xlslice_1_1/synth/driverSystem_xlslice_1_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'driverSystem_xlslice_2_0' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_xlslice_2_0/synth/driverSystem_xlslice_2_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_5_xlslice__parameterized1' [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/6792/hdl/xlslice_v1_0_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_5_xlslice__parameterized1' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ipshared/6792/hdl/xlslice_v1_0_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_xlslice_2_0' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_xlslice_2_0/synth/driverSystem_xlslice_2_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem' (0#1) [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'driverSystem_wrapper' (0#1) [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/hdl/driverSystem_wrapper.v:13]
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_5_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_5_xlslice__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_5_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_5_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1531.582 ; gain = 707.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1531.582 ; gain = 707.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1531.582 ; gain = 707.066
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1531.582 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_rst_clk_wiz_1_100M_0/driverSystem_rst_clk_wiz_1_100M_0/driverSystem_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'driverSystem_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_rst_clk_wiz_1_100M_0/driverSystem_rst_clk_wiz_1_100M_0/driverSystem_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'driverSystem_i/rst_clk_wiz_1_100M'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0_in_context.xdc] for cell 'driverSystem_i/axi_quad_spi_0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0/driverSystem_axi_quad_spi_0_0_in_context.xdc] for cell 'driverSystem_i/axi_quad_spi_0'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_microblaze_0_0/driverSystem_microblaze_0_0/driverSystem_microblaze_0_0_in_context.xdc] for cell 'driverSystem_i/microblaze_0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_microblaze_0_0/driverSystem_microblaze_0_0/driverSystem_microblaze_0_0_in_context.xdc] for cell 'driverSystem_i/microblaze_0'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_gpio_0_0/driverSystem_axi_gpio_0_0/driverSystem_axi_gpio_0_0_in_context.xdc] for cell 'driverSystem_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_gpio_0_0/driverSystem_axi_gpio_0_0/driverSystem_axi_gpio_0_0_in_context.xdc] for cell 'driverSystem_i/axi_gpio_0'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_mdm_1_0/driverSystem_mdm_1_0/driverSystem_mdm_1_0_in_context.xdc] for cell 'driverSystem_i/mdm_1'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_mdm_1_0/driverSystem_mdm_1_0/driverSystem_mdm_1_0_in_context.xdc] for cell 'driverSystem_i/mdm_1'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/driverSystem_axi_smc_0/driverSystem_axi_smc_0_in_context.xdc] for cell 'driverSystem_i/axi_smc'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/driverSystem_axi_smc_0/driverSystem_axi_smc_0_in_context.xdc] for cell 'driverSystem_i/axi_smc'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0_in_context.xdc] for cell 'driverSystem_i/clk_wiz_1'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0_in_context.xdc] for cell 'driverSystem_i/clk_wiz_1'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_dlmb_v10_0/driverSystem_dlmb_v10_0/driverSystem_ilmb_v10_0_in_context.xdc] for cell 'driverSystem_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_dlmb_v10_0/driverSystem_dlmb_v10_0/driverSystem_ilmb_v10_0_in_context.xdc] for cell 'driverSystem_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_ilmb_v10_0/driverSystem_ilmb_v10_0/driverSystem_ilmb_v10_0_in_context.xdc] for cell 'driverSystem_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_ilmb_v10_0/driverSystem_ilmb_v10_0/driverSystem_ilmb_v10_0_in_context.xdc] for cell 'driverSystem_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_dlmb_bram_if_cntlr_0/driverSystem_dlmb_bram_if_cntlr_0/driverSystem_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'driverSystem_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_dlmb_bram_if_cntlr_0/driverSystem_dlmb_bram_if_cntlr_0/driverSystem_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'driverSystem_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_ilmb_bram_if_cntlr_0/driverSystem_ilmb_bram_if_cntlr_0/driverSystem_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'driverSystem_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_ilmb_bram_if_cntlr_0/driverSystem_ilmb_bram_if_cntlr_0/driverSystem_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'driverSystem_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_lmb_bram_0/driverSystem_lmb_bram_0/driverSystem_lmb_bram_0_in_context.xdc] for cell 'driverSystem_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_lmb_bram_0/driverSystem_lmb_bram_0/driverSystem_lmb_bram_0_in_context.xdc] for cell 'driverSystem_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_uartlite_0_0/driverSystem_axi_uartlite_0_0/driverSystem_axi_uartlite_0_0_in_context.xdc] for cell 'driverSystem_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_uartlite_0_0/driverSystem_axi_uartlite_0_0/driverSystem_axi_uartlite_0_0_in_context.xdc] for cell 'driverSystem_i/axi_uartlite_0'
+Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_bnn_axi_0_2/driverSystem_bnn_axi_0_2/driverSystem_bnn_axi_0_2_in_context.xdc] for cell 'driverSystem_i/bnn_axi_0'
+Finished Parsing XDC File [c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_bnn_axi_0_2/driverSystem_bnn_axi_0_2/driverSystem_bnn_axi_0_2_in_context.xdc] for cell 'driverSystem_i/bnn_axi_0'
+Parsing XDC File [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.srcs/constrs_1/imports/Spartan7/Arty-S7-25-Master.xdc]
+Finished Parsing XDC File [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.srcs/constrs_1/imports/Spartan7/Arty-S7-25-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.srcs/constrs_1/imports/Spartan7/Arty-S7-25-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/driverSystem_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/driverSystem_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1531.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1531.582 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'driverSystem_i/axi_quad_spi_0' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'driverSystem_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1531.582 ; gain = 707.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s25csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1531.582 ; gain = 707.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1531.582 ; gain = 707.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1531.582 ; gain = 707.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 90 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port Din[1] in module driverSystem_xlslice_2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module driverSystem_xlslice_2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module driverSystem_xlslice_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module driverSystem_xlslice_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module driverSystem_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module driverSystem_xlslice_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1568.727 ; gain = 744.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1730.453 ; gain = 905.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1730.605 ; gain = 906.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1741.164 ; gain = 916.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 2016.391 ; gain = 1191.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 2016.391 ; gain = 1191.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 2016.391 ; gain = 1191.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 2016.391 ; gain = 1191.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 2016.391 ; gain = 1191.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 2016.391 ; gain = 1191.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |driverSystem_axi_gpio_0_0         |         1|
+|2     |driverSystem_axi_quad_spi_0_0     |         1|
+|3     |driverSystem_axi_smc_0            |         1|
+|4     |driverSystem_axi_uartlite_0_0     |         1|
+|5     |driverSystem_bnn_axi_0_2          |         1|
+|6     |driverSystem_clk_wiz_1_0          |         1|
+|7     |driverSystem_mdm_1_0              |         1|
+|8     |driverSystem_microblaze_0_0       |         1|
+|9     |driverSystem_rst_clk_wiz_1_100M_0 |         1|
+|10    |driverSystem_dlmb_bram_if_cntlr_0 |         1|
+|11    |driverSystem_dlmb_v10_0           |         1|
+|12    |driverSystem_ilmb_bram_if_cntlr_0 |         1|
+|13    |driverSystem_ilmb_v10_0           |         1|
+|14    |driverSystem_lmb_bram_0           |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |driverSystem_axi_gpio_0         |     1|
+|2     |driverSystem_axi_quad_spi_0     |     1|
+|3     |driverSystem_axi_smc            |     1|
+|4     |driverSystem_axi_uartlite_0     |     1|
+|5     |driverSystem_bnn_axi_0          |     1|
+|6     |driverSystem_clk_wiz_1          |     1|
+|7     |driverSystem_dlmb_bram_if_cntlr |     1|
+|8     |driverSystem_dlmb_v10           |     1|
+|9     |driverSystem_ilmb_bram_if_cntlr |     1|
+|10    |driverSystem_ilmb_v10           |     1|
+|11    |driverSystem_lmb_bram           |     1|
+|12    |driverSystem_mdm_1              |     1|
+|13    |driverSystem_microblaze_0       |     1|
+|14    |driverSystem_rst_clk_wiz_1_100M |     1|
+|15    |IBUF                            |     4|
+|16    |OBUF                            |     7|
++------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 2016.391 ; gain = 1191.875
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 2016.391 ; gain = 1191.875
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 2016.391 ; gain = 1191.875
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2025.594 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2029.199 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 3531e76b
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+64 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 2029.238 ; gain = 1359.848
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2029.238 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/driverSystem_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file driverSystem_wrapper_utilization_synth.rpt -pb driverSystem_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  4 19:44:23 2026...

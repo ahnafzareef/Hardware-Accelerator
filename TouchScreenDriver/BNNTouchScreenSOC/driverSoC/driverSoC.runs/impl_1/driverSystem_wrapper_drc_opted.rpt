@@ -1,0 +1,47 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Sun Oct  4 19:55:33 2026
+| Host         : LAPTOP-E4LD1OHV running 64-bit major release  (build 9200)
+| Command      : report_drc -file driverSystem_wrapper_drc_opted.rpt -pb driverSystem_wrapper_drc_opted.pb -rpx driverSystem_wrapper_drc_opted.rpx
+| Design       : driverSystem_wrapper
+| Device       : xc7s25csga324-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 2
++-----------+----------+------------------------------------------------+--------+
+| Rule      | Severity | Description                                    | Checks |
++-----------+----------+------------------------------------------------+--------+
+| PLIO-6    | Warning  | Placement Constraints Check for IO constraints | 1      |
+| REQP-1617 | Warning  | use_IOB_register                               | 1      |
++-----------+----------+------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+PLIO-6#1 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+REQP-1617#1 Warning
+use_IOB_register  
+The FDRE cell driverSystem_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDRE is properly connected to an IO.
+Related violations: <none>
+
+

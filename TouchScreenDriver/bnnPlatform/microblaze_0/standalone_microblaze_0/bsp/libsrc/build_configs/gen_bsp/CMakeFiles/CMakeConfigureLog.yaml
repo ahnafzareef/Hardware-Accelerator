@@ -1,0 +1,405 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The target system is: Generic -  - microblaze
+      The host system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin/mb-gcc.exe 
+      Build flags: -mlittle-endian;-mxl-soft-mul;-mcpu=v11.0;-DSDT;-MMD;-MP;-specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec;-IC:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include
+      Id flags:  
+      
+      The output was:
+      1
+      C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/ld.exe: cannot find -lxil: No such file or directory
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin/mb-gcc.exe 
+      Build flags: -mlittle-endian;-mxl-soft-mul;-mcpu=v11.0;-DSDT;-MMD;-MP;-specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec;-IC:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.d"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification could not be found in:
+        C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles/4.0.1/CompilerIdC/CMakeCCompilerId.d
+      
+      The C compiler identification is GNU, found in:
+        C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles/4.0.1/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin/mb-g++.exe 
+      Build flags: -mlittle-endian;-mxl-soft-mul;-mcpu=v11.0;-DSDT;-MMD;-MP;-specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec;-IC:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include
+      Id flags:  
+      
+      The output was:
+      1
+      C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/ld.exe: cannot find -lxil: No such file or directory
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin/mb-g++.exe 
+      Build flags: -mlittle-endian;-mxl-soft-mul;-mcpu=v11.0;-DSDT;-MMD;-MP;-specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec;-IC:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.d"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification could not be found in:
+        C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles/4.0.1/CompilerIdCXX/CMakeCXXCompilerId.d
+      
+      The CXX compiler identification is GNU, found in:
+        C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles/4.0.1/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles/CMakeScratch/TryCompile-c4huxj"
+      binary: "C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles/CMakeScratch/TryCompile-c4huxj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "  -mlittle-endian -mxl-soft-mul -mcpu=v11.0 -DSDT  -MMD -MP -specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec -IC:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_LIBRARY_PATH: "C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/lib"
+      CMAKE_MODULE_PATH: "C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles/CMakeScratch/TryCompile-c4huxj'
+        
+        Run Build Command(s): C:/AMDDesignTools/2026.1/Vitis/bin/ninja.exe -v cmTC_d529a
+        [1/2] C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\mb-gcc.exe   -mlittle-endian -mxl-soft-mul -mcpu=v11.0 -DSDT  -MMD -MP -specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec -IC:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include    -v -o CMakeFiles/cmTC_d529a.dir/CMakeCCompilerABI.c.obj -c C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        Reading specs from C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec
+        COLLECT_GCC=C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\x86_64-oesdk-mingw32\\usr\\bin\\microblaze-xilinx-elf\\microblaze-xilinx-elf-gcc.exe
+        Target: microblaze-xilinx-elf
+        Configured with: ../../../../../../work-shared/gcc-13.4.0-r0/gcc-13.4.0/configure --build=x86_64-linux --host=x86_64-w64-mingw32 --target=microblaze-xilinx-elf --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/bin/microblaze-xilinx-elf --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/bin/microblaze-xilinx-elf --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/libexec/microblaze-xilinx-elf --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/lib/microblaze-xilinx-elf --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/host --enable-clocale=generic --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-libstdcxx-pch --program-prefix=microblaze-xilinx-elf- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.4.0 --with-build-time-tools=/host-native/usr/microblaze-xilinx-elf/bin --with-sysroot=/not/exist --with-build-sysroot=/host --with-plugin-ld=ld --enable-poison-system-directories --disable-static --disable-nls --enable-initfini-array --enable-multilib --disable-initfini_array --disable-__cxa_atexit --disable-libstdcxx-pch --with-newlib --disable-threads --enable-plugins --with-gnu-as --disable-libitm --disable-tm-clone-registry --without-long-double-128 --disable-nls --with-sysroot=/not/exist
+        Thread model: single
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.4.0 (GCC) 
+        COLLECT_GCC_OPTIONS='--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf' '-mlittle-endian' '-mxl-soft-mul' '-mcpu=v11.0' '-D' 'SDT' '-MMD' '-MP' '-specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec' '-I' 'C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include' '-v' '-o' 'CMakeFiles/cmTC_d529a.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_d529a.dir/'
+         C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/cc1.exe -quiet -v -I C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include -imultilib le -iprefix C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/ -isysroot C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf -MMD CMakeFiles/cmTC_d529a.dir/CMakeCCompilerABI.c.d -MP -MQ CMakeFiles/cmTC_d529a.dir/CMakeCCompilerABI.c.obj -D SDT C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d529a.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mxl-soft-mul -mcpu=v11.0 -version -o C:\\Users\\ahnaf\\AppData\\Local\\Temp\\cceYV1Vz.s
+        GNU C17 (GCC) version 13.4.0 (microblaze-xilinx-elf)
+        	compiled by GNU C version 13.4.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/../../../../../microblaze-xilinx-elf/include"
+        ignoring duplicate directory "C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/../../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include"
+        ignoring nonexistent directory "C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf/usr/lib/microblaze-xilinx-elf/13.4.0/include"
+        ignoring nonexistent directory "C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/../../../../include"
+        ignoring duplicate directory "C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/../../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed"
+        ignoring nonexistent directory "C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/../../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/../../../../../microblaze-xilinx-elf/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include
+         C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include
+         C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed
+         C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf/usr/include
+        End of search list.
+        Compiler executable checksum: 18b0afd66cbf87324a9d2bbd5bb9611d
+        COLLECT_GCC_OPTIONS='--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf' '-mlittle-endian' '-mxl-soft-mul' '-mcpu=v11.0' '-D' 'SDT' '-MMD' '-MP' '-specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec' '-I' 'C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include' '-v' '-o' 'CMakeFiles/cmTC_d529a.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_d529a.dir/'
+         C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/as.exe -v -I C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include -EL -o CMakeFiles/cmTC_d529a.dir/CMakeCCompilerABI.c.obj C:\\Users\\ahnaf\\AppData\\Local\\Temp\\cceYV1Vz.s
+        GNU assembler version 2.42.0 (microblaze-xilinx-elf) using BFD version (GNU Binutils) 2.42.0.20240723
+        COMPILER_PATH=C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/;C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/
+        LIBRARY_PATH=C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/lib/le/;C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/;C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/;C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/lib/microblaze-xilinx-elf/13.4.0/;C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/lib/
+        COLLECT_GCC_OPTIONS='--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf' '-mlittle-endian' '-mxl-soft-mul' '-mcpu=v11.0' '-D' 'SDT' '-MMD' '-MP' '-specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec' '-I' 'C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include' '-v' '-o' 'CMakeFiles/cmTC_d529a.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_d529a.dir/CMakeCCompilerABI.c.'\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\AMDDesignTools\\2026.1\\Vitis\\tps\\win64\\cmake-4.0.1\\bin\\cmake.exe -E rm -f libcmTC_d529a.a && mb-ar qc libcmTC_d529a.a  CMakeFiles/cmTC_d529a.dir/CMakeCCompilerABI.c.obj && C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\mb-ranlib.exe libcmTC_d529a.a && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include]
+          add: [C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include]
+          add: [C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed]
+          add: [C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/include]
+        end of search list found
+        collapse include dir [C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include] ==> [C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include]
+        collapse include dir [C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include] ==> [C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include]
+        collapse include dir [C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed] ==> [C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed]
+        collapse include dir [C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/include] ==> [C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include]
+        implicit include dirs: [C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include;C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include;C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed;C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: 'C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles/CMakeScratch/TryCompile-c4huxj']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/AMDDesignTools/2026.1/Vitis/bin/ninja.exe -v cmTC_d529a]
+        ignore line: [[1/2] C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\mb-gcc.exe   -mlittle-endian -mxl-soft-mul -mcpu=v11.0 -DSDT  -MMD -MP -specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec -IC:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include    -v -o CMakeFiles/cmTC_d529a.dir/CMakeCCompilerABI.c.obj -c C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [Reading specs from C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec]
+        ignore line: [COLLECT_GCC=C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\x86_64-oesdk-mingw32\\usr\\bin\\microblaze-xilinx-elf\\microblaze-xilinx-elf-gcc.exe]
+        ignore line: [Target: microblaze-xilinx-elf]
+        ignore line: [Configured with: ../../../../../../work-shared/gcc-13.4.0-r0/gcc-13.4.0/configure --build=x86_64-linux --host=x86_64-w64-mingw32 --target=microblaze-xilinx-elf --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/bin/microblaze-xilinx-elf --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/bin/microblaze-xilinx-elf --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/libexec/microblaze-xilinx-elf --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/lib/microblaze-xilinx-elf --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/host --enable-clocale=generic --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-libstdcxx-pch --program-prefix=microblaze-xilinx-elf- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.4.0 --with-build-time-tools=/host-native/usr/microblaze-xilinx-elf/bin --with-sysroot=/not/exist --with-build-sysroot=/host --with-plugin-ld=ld --enable-poison-system-directories --disable-static --disable-nls --enable-initfini-array --enable-multilib --disable-initfini_array --disable-__cxa_atexit --disable-libstdcxx-pch --with-newlib --disable-threads --enable-plugins --with-gnu-as --disable-libitm --disable-tm-clone-registry --without-long-double-128 --disable-nls --with-sysroot=/not/exist]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.4.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf' '-mlittle-endian' '-mxl-soft-mul' '-mcpu=v11.0' '-D' 'SDT' '-MMD' '-MP' '-specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec' '-I' 'C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include' '-v' '-o' 'CMakeFiles/cmTC_d529a.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_d529a.dir/']
+        ignore line: [ C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/cc1.exe -quiet -v -I C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include -imultilib le -iprefix C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/ -isysroot C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf -MMD CMakeFiles/cmTC_d529a.dir/CMakeCCompilerABI.c.d -MP -MQ CMakeFiles/cmTC_d529a.dir/CMakeCCompilerABI.c.obj -D SDT C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d529a.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mxl-soft-mul -mcpu=v11.0 -version -o C:\\Users\\ahnaf\\AppData\\Local\\Temp\\cceYV1Vz.s]
+        ignore line: [GNU C17 (GCC) version 13.4.0 (microblaze-xilinx-elf)]
+        ignore line: [	compiled by GNU C version 13.4.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/../../../../../microblaze-xilinx-elf/include"]
+        ignore line: [ignoring duplicate directory "C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/../../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include"]
+        ignore line: [ignoring nonexistent directory "C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf/usr/lib/microblaze-xilinx-elf/13.4.0/include"]
+        ignore line: [ignoring nonexistent directory "C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/../../../../include"]
+        ignore line: [ignoring duplicate directory "C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/../../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/../../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/../../../../../microblaze-xilinx-elf/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include]
+        ignore line: [ C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include]
+        ignore line: [ C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed]
+        ignore line: [ C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 18b0afd66cbf87324a9d2bbd5bb9611d]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf' '-mlittle-endian' '-mxl-soft-mul' '-mcpu=v11.0' '-D' 'SDT' '-MMD' '-MP' '-specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec' '-I' 'C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include' '-v' '-o' 'CMakeFiles/cmTC_d529a.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_d529a.dir/']
+        ignore line: [ C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/as.exe -v -I C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include -EL -o CMakeFiles/cmTC_d529a.dir/CMakeCCompilerABI.c.obj C:\\Users\\ahnaf\\AppData\\Local\\Temp\\cceYV1Vz.s]
+        ignore line: [GNU assembler version 2.42.0 (microblaze-xilinx-elf) using BFD version (GNU Binutils) 2.42.0.20240723]
+        ignore line: [COMPILER_PATH=C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/]
+        ignore line: [C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/]
+        ignore line: [LIBRARY_PATH=C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/lib/le/]
+        ignore line: [C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/]
+        ignore line: [C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/]
+        ignore line: [C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/lib/microblaze-xilinx-elf/13.4.0/]
+        ignore line: [C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf' '-mlittle-endian' '-mxl-soft-mul' '-mcpu=v11.0' '-D' 'SDT' '-MMD' '-MP' '-specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec' '-I' 'C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include' '-v' '-o' 'CMakeFiles/cmTC_d529a.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_d529a.dir/CMakeCCompilerABI.c.'\x0d]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\AMDDesignTools\\2026.1\\Vitis\\tps\\win64\\cmake-4.0.1\\bin\\cmake.exe -E rm -f libcmTC_d529a.a && mb-ar qc libcmTC_d529a.a  CMakeFiles/cmTC_d529a.dir/CMakeCCompilerABI.c.obj && C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\mb-ranlib.exe libcmTC_d529a.a && cd ."]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles/CMakeScratch/TryCompile-cahq6i"
+      binary: "C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles/CMakeScratch/TryCompile-cahq6i"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -mlittle-endian -mxl-soft-mul -mcpu=v11.0 -DSDT  -MMD -MP -specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec -IC:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_LIBRARY_PATH: "C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/lib"
+      CMAKE_MODULE_PATH: "C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles/CMakeScratch/TryCompile-cahq6i'
+        
+        Run Build Command(s): C:/AMDDesignTools/2026.1/Vitis/bin/ninja.exe -v cmTC_57573
+        [1/2] C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\mb-g++.exe   -mlittle-endian -mxl-soft-mul -mcpu=v11.0 -DSDT  -MMD -MP -specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec -IC:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include    -v -o CMakeFiles/cmTC_57573.dir/CMakeCXXCompilerABI.cpp.obj -c C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        Reading specs from C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec
+        COLLECT_GCC=C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\x86_64-oesdk-mingw32\\usr\\bin\\microblaze-xilinx-elf\\microblaze-xilinx-elf-g++.exe
+        Target: microblaze-xilinx-elf
+        Configured with: ../../../../../../work-shared/gcc-13.4.0-r0/gcc-13.4.0/configure --build=x86_64-linux --host=x86_64-w64-mingw32 --target=microblaze-xilinx-elf --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/bin/microblaze-xilinx-elf --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/bin/microblaze-xilinx-elf --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/libexec/microblaze-xilinx-elf --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/lib/microblaze-xilinx-elf --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/host --enable-clocale=generic --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-libstdcxx-pch --program-prefix=microblaze-xilinx-elf- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.4.0 --with-build-time-tools=/host-native/usr/microblaze-xilinx-elf/bin --with-sysroot=/not/exist --with-build-sysroot=/host --with-plugin-ld=ld --enable-poison-system-directories --disable-static --disable-nls --enable-initfini-array --enable-multilib --disable-initfini_array --disable-__cxa_atexit --disable-libstdcxx-pch --with-newlib --disable-threads --enable-plugins --with-gnu-as --disable-libitm --disable-tm-clone-registry --without-long-double-128 --disable-nls --with-sysroot=/not/exist
+        Thread model: single
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.4.0 (GCC) 
+        COLLECT_GCC_OPTIONS='--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf' '-mlittle-endian' '-mxl-soft-mul' '-mcpu=v11.0' '-D' 'SDT' '-MMD' '-MP' '-specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec' '-I' 'C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include' '-v' '-o' 'CMakeFiles/cmTC_57573.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_57573.dir/'
+         C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/cc1plus.exe -quiet -v -I C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include -imultilib le -iprefix C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/ -isysroot C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf -MMD CMakeFiles/cmTC_57573.dir/CMakeCXXCompilerABI.cpp.d -MP -MQ CMakeFiles/cmTC_57573.dir/CMakeCXXCompilerABI.cpp.obj -D SDT C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_57573.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mxl-soft-mul -mcpu=v11.0 -version -o C:\\Users\\ahnaf\\AppData\\Local\\Temp\\ccyQRpY2.s
+        GNU C++17 (GCC) version 13.4.0 (microblaze-xilinx-elf)
+        	compiled by GNU C version 13.4.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/../../../../../microblaze-xilinx-elf/include"
+        ignoring duplicate directory "C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/../../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include"
+        ignoring nonexistent directory "C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf/usr/lib/microblaze-xilinx-elf/13.4.0/include"
+        ignoring nonexistent directory "C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/../../../../include"
+        ignoring duplicate directory "C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/../../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed"
+        ignoring nonexistent directory "C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/../../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/../../../../../microblaze-xilinx-elf/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include
+         C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include
+         C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed
+         C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf/usr/include/c++/13.4.0
+         C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf/usr/include/c++/13.4.0/microblaze-xilinx-elf/le
+         C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf/usr/include/c++/13.4.0/backward
+         C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf/usr/include
+        End of search list.
+        Compiler executable checksum: e1f17455c28779be4ce65d1d0fdeb0d2
+        COLLECT_GCC_OPTIONS='--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf' '-mlittle-endian' '-mxl-soft-mul' '-mcpu=v11.0' '-D' 'SDT' '-MMD' '-MP' '-specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec' '-I' 'C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include' '-v' '-o' 'CMakeFiles/cmTC_57573.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_57573.dir/'
+         C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/as.exe -v -I C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include -EL -o CMakeFiles/cmTC_57573.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\ahnaf\\AppData\\Local\\Temp\\ccyQRpY2.s
+        GNU assembler version 2.42.0 (microblaze-xilinx-elf) using BFD version (GNU Binutils) 2.42.0.20240723
+        COMPILER_PATH=C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/;C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/
+        LIBRARY_PATH=C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/lib/le/;C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/;C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/;C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/lib/microblaze-xilinx-elf/13.4.0/;C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/lib/
+        COLLECT_GCC_OPTIONS='--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf' '-mlittle-endian' '-mxl-soft-mul' '-mcpu=v11.0' '-D' 'SDT' '-MMD' '-MP' '-specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec' '-I' 'C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include' '-v' '-o' 'CMakeFiles/cmTC_57573.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_57573.dir/CMakeCXXCompilerABI.cpp.'\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\AMDDesignTools\\2026.1\\Vitis\\tps\\win64\\cmake-4.0.1\\bin\\cmake.exe -E rm -f libcmTC_57573.a && mb-ar qc libcmTC_57573.a  CMakeFiles/cmTC_57573.dir/CMakeCXXCompilerABI.cpp.obj && C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\mb-ranlib.exe libcmTC_57573.a && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include]
+          add: [C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include]
+          add: [C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed]
+          add: [C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/include/c++/13.4.0]
+          add: [C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/include/c++/13.4.0/microblaze-xilinx-elf/le]
+          add: [C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/include/c++/13.4.0/backward]
+          add: [C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/include]
+        end of search list found
+        collapse include dir [C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include] ==> [C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include]
+        collapse include dir [C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include] ==> [C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include]
+        collapse include dir [C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed] ==> [C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed]
+        collapse include dir [C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/include/c++/13.4.0] ==> [C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include/c++/13.4.0]
+        collapse include dir [C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/include/c++/13.4.0/microblaze-xilinx-elf/le] ==> [C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include/c++/13.4.0/microblaze-xilinx-elf/le]
+        collapse include dir [C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/include/c++/13.4.0/backward] ==> [C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include/c++/13.4.0/backward]
+        collapse include dir [C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/include] ==> [C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include]
+        implicit include dirs: [C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include;C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include;C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed;C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include/c++/13.4.0;C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include/c++/13.4.0/microblaze-xilinx-elf/le;C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include/c++/13.4.0/backward;C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: 'C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles/CMakeScratch/TryCompile-cahq6i']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/AMDDesignTools/2026.1/Vitis/bin/ninja.exe -v cmTC_57573]
+        ignore line: [[1/2] C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\mb-g++.exe   -mlittle-endian -mxl-soft-mul -mcpu=v11.0 -DSDT  -MMD -MP -specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec -IC:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include    -v -o CMakeFiles/cmTC_57573.dir/CMakeCXXCompilerABI.cpp.obj -c C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [Reading specs from C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec]
+        ignore line: [COLLECT_GCC=C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\x86_64-oesdk-mingw32\\usr\\bin\\microblaze-xilinx-elf\\microblaze-xilinx-elf-g++.exe]
+        ignore line: [Target: microblaze-xilinx-elf]
+        ignore line: [Configured with: ../../../../../../work-shared/gcc-13.4.0-r0/gcc-13.4.0/configure --build=x86_64-linux --host=x86_64-w64-mingw32 --target=microblaze-xilinx-elf --prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr --exec_prefix=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr --bindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/bin/microblaze-xilinx-elf --sbindir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/bin/microblaze-xilinx-elf --libexecdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/libexec/microblaze-xilinx-elf --datadir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/share --sysconfdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/etc --sharedstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/com --localstatedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/var --libdir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/lib/microblaze-xilinx-elf --includedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/include --oldincludedir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/include --infodir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/share/info --mandir=/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/host --enable-clocale=generic --with-gnu-ld --enable-shared --enable-languages=c,c++,fortran --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-libstdcxx-pch --program-prefix=microblaze-xilinx-elf- --without-local-prefix --disable-install-libiberty --disable-libssp --enable-libitm --enable-lto --disable-bootstrap --with-system-zlib --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/13.4.0 --with-build-time-tools=/host-native/usr/microblaze-xilinx-elf/bin --with-sysroot=/not/exist --with-build-sysroot=/host --with-plugin-ld=ld --enable-poison-system-directories --disable-static --disable-nls --enable-initfini-array --enable-multilib --disable-initfini_array --disable-__cxa_atexit --disable-libstdcxx-pch --with-newlib --disable-threads --enable-plugins --with-gnu-as --disable-libitm --disable-tm-clone-registry --without-long-double-128 --disable-nls --with-sysroot=/not/exist]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.4.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf' '-mlittle-endian' '-mxl-soft-mul' '-mcpu=v11.0' '-D' 'SDT' '-MMD' '-MP' '-specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec' '-I' 'C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include' '-v' '-o' 'CMakeFiles/cmTC_57573.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_57573.dir/']
+        ignore line: [ C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/cc1plus.exe -quiet -v -I C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include -imultilib le -iprefix C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/ -isysroot C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf -MMD CMakeFiles/cmTC_57573.dir/CMakeCXXCompilerABI.cpp.d -MP -MQ CMakeFiles/cmTC_57573.dir/CMakeCXXCompilerABI.cpp.obj -D SDT C:/AMDDesignTools/2026.1/Vitis/tps/win64/cmake-4.0.1/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_57573.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mxl-soft-mul -mcpu=v11.0 -version -o C:\\Users\\ahnaf\\AppData\\Local\\Temp\\ccyQRpY2.s]
+        ignore line: [GNU C++17 (GCC) version 13.4.0 (microblaze-xilinx-elf)]
+        ignore line: [	compiled by GNU C version 13.4.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/../../../../../microblaze-xilinx-elf/include"]
+        ignore line: [ignoring duplicate directory "C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/../../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include"]
+        ignore line: [ignoring nonexistent directory "C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf/usr/lib/microblaze-xilinx-elf/13.4.0/include"]
+        ignore line: [ignoring nonexistent directory "C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf/usr/local/oe-sdk-hardcoded-buildpath/sysroots/x86_64-w64-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/../../../../include"]
+        ignore line: [ignoring duplicate directory "C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/../../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/../../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/../../../../../microblaze-xilinx-elf/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include]
+        ignore line: [ C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include]
+        ignore line: [ C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed]
+        ignore line: [ C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf/usr/include/c++/13.4.0]
+        ignore line: [ C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf/usr/include/c++/13.4.0/microblaze-xilinx-elf/le]
+        ignore line: [ C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf/usr/include/c++/13.4.0/backward]
+        ignore line: [ C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: e1f17455c28779be4ce65d1d0fdeb0d2]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf' '-mlittle-endian' '-mxl-soft-mul' '-mcpu=v11.0' '-D' 'SDT' '-MMD' '-MP' '-specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec' '-I' 'C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include' '-v' '-o' 'CMakeFiles/cmTC_57573.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_57573.dir/']
+        ignore line: [ C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/as.exe -v -I C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include -EL -o CMakeFiles/cmTC_57573.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\ahnaf\\AppData\\Local\\Temp\\ccyQRpY2.s]
+        ignore line: [GNU assembler version 2.42.0 (microblaze-xilinx-elf) using BFD version (GNU Binutils) 2.42.0.20240723]
+        ignore line: [COMPILER_PATH=C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/]
+        ignore line: [C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/]
+        ignore line: [LIBRARY_PATH=C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/lib/le/]
+        ignore line: [C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/]
+        ignore line: [C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../lib/microblaze-xilinx-elf/gcc/]
+        ignore line: [C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/lib/microblaze-xilinx-elf/13.4.0/]
+        ignore line: [C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/bin//../microblazeeb-xilinx-elf/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\\\..\\microblazeeb-xilinx-elf' '-mlittle-endian' '-mxl-soft-mul' '-mcpu=v11.0' '-D' 'SDT' '-MMD' '-MP' '-specs=C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/Xilinx.spec' '-I' 'C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/include' '-v' '-o' 'CMakeFiles/cmTC_57573.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_57573.dir/CMakeCXXCompilerABI.cpp.'\x0d]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\AMDDesignTools\\2026.1\\Vitis\\tps\\win64\\cmake-4.0.1\\bin\\cmake.exe -E rm -f libcmTC_57573.a && mb-ar qc libcmTC_57573.a  CMakeFiles/cmTC_57573.dir/CMakeCXXCompilerABI.cpp.obj && C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\mb-ranlib.exe libcmTC_57573.a && cd ."]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+...

@@ -1,0 +1,299 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 15-jul-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sun Oct  4 19:14:47 2026
+# Process ID         : 22848
+# Current directory  : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent59744 C:\Projects\AmbitiousProjects\ILI9341Driver\driverSoC\driverSoC.xpr
+# Log file           : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/vivado.log
+# Journal file       : C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC\vivado.jou
+# Running On         : LAPTOP-E4LD1OHV
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16438 MB
+# Swap memory        : 29961 MB
+# Total Virtual      : 46400 MB
+# Available Virtual  : 7270 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.srcs/sources_1/bd/driverSystem/driverSystem.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ driverSystem_xlslice_0_0
+driverSystem_xlslice_1_1
+driverSystem_xlslice_2_0
+open_project: Time (s): cpu = 00:00:45 ; elapsed = 00:00:30 . Memory (MB): peak = 1820.203 ; gain = 427.062
+update_compile_order -fileset sources_1
+open_bd_design {C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.srcs/sources_1/bd/driverSystem/driverSystem.bd}
+Reading block design file <C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.srcs/sources_1/bd/driverSystem/driverSystem.bd>...
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - axi_quad_spi_0
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_2
+Successfully read diagram <driverSystem> from block design file <C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.srcs/sources_1/bd/driverSystem/driverSystem.bd>
+open_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 1972.418 ; gain = 152.215
+set_property  ip_repo_paths  C:/Projects/ip_repo [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ip_repo'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:bnn_axi:1.0 bnn_axi_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/bnn_axi_0/S00_AXI} ddr_seg {Auto} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins bnn_axi_0/S00_AXI]
+Slave segment '/bnn_axi_0/S00_AXI/S00_AXI_reg' is being assigned into address space '/microblaze_0/Data' at <0x44A1_0000 [ 64K ]>.
+validate_bd_design
+INFO: [BD 5-943] Reserving offset range <0x4000_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A0_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x4060_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A1_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] driverSystem_axi_smc_0: SmartConnect driverSystem_axi_smc_0 is in Ultralite mode.
+INFO: [xilinx.com:ip:microblaze:11.0-9] /microblaze_0: Setting C_BASE_VECTORS to 0x00000000.
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+make_wrapper -files [get_files C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.srcs/sources_1/bd/driverSystem/driverSystem.bd] -top
+INFO: [BD 41-1662] The design 'driverSystem.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Projects\AmbitiousProjects\ILI9341Driver\driverSoC\driverSoC.srcs\sources_1\bd\driverSystem\driverSystem.bd> 
+Wrote  : <C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.srcs/sources_1/bd/driverSystem/ui/bd_d937f0d7.ui> 
+Verilog Output written to : c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v
+Verilog Output written to : c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/sim/driverSystem.v
+Verilog Output written to : c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/hdl/driverSystem_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 3025.113 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'driverSystem.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v
+Verilog Output written to : c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/sim/driverSystem.v
+Verilog Output written to : c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/hdl/driverSystem_wrapper.v
+Exporting to file c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/bd_0/hw_handoff/driverSystem_axi_smc_0.hwh
+Generated Hardware Definition File c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/bd_0/synth/driverSystem_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bnn_axi_0 .
+Exporting to file c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/hw_handoff/driverSystem.hwh
+Generated Hardware Definition File c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.hwdef
+INFO: [BD 41-3262] Generated VHDL Instantiation Template file c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/driverSystem.vho
+INFO: [BD 41-3262] Generated Verilog Instantiation Template file c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/driverSystem.veo
+INFO: [BD 41-3262] Generated System Verilog Instantiation Template file c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/driverSystem_sv.sveo
+[Sun Oct  4 19:23:49 2026] Launched driverSystem_axi_smc_0_synth_1, driverSystem_bnn_axi_0_0_synth_1, synth_1...
+Run output will be captured here:
+driverSystem_axi_smc_0_synth_1: C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_axi_smc_0_synth_1/runme.log
+driverSystem_bnn_axi_0_0_synth_1: C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_bnn_axi_0_0_synth_1/runme.log
+synth_1: C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/runme.log
+[Sun Oct  4 19:23:49 2026] Launched impl_1...
+Run output will be captured here: C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 3025.113 ; gain = 0.000
+ipx::edit_ip_in_project -upgrade true -name bnn_axi_v1_0_project -directory C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.tmp/bnn_axi_v1_0_project c:/Projects/ip_repo/bnn_axi_1_0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/projects/ambitiousprojects/ili9341driver/driversoc/driversoc.tmp/bnn_axi_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 3025.113 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-11770] Clock interface 'S00_AXI_CLK' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-801] The last file in file group "Verilog Synthesis" should be an HDL file: "src/layer3_weights.mem".  During generation the IP Flow uses the last file to determine library and other information when generating the top wrapper file.  If possible, please make sure that non-HDL files are located earlier in the list of files for this file group.
+WARNING: [IP_Flow 19-801] The last file in file group "Verilog Simulation" should be an HDL file: "src/layer3_weights.mem".  During generation the IP Flow uses the last file to determine library and other information when generating the top wrapper file.  If possible, please make sure that non-HDL files are located earlier in the list of files for this file group.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+set_property core_revision 4 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-11770] Clock interface 'S00_AXI_CLK' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-801] The last file in file group "Verilog Synthesis" should be an HDL file: "src/layer3_weights.mem".  During generation the IP Flow uses the last file to determine library and other information when generating the top wrapper file.  If possible, please make sure that non-HDL files are located earlier in the list of files for this file group.
+WARNING: [IP_Flow 19-801] The last file in file group "Verilog Simulation" should be an HDL file: "src/layer3_weights.mem".  During generation the IP Flow uses the last file to determine library and other information when generating the top wrapper file.  If possible, please make sure that non-HDL files are located earlier in the list of files for this file group.
+INFO: [IP_Flow 19-2181] Payment is not required for this core.
+WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Projects/ip_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Projects/ip_repo'
+delete_bd_objs [get_bd_intf_nets axi_smc_M03_AXI] [get_bd_cells bnn_axi_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:bnn_axi:1.0 bnn_axi_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/bnn_axi_0/S00_AXI} ddr_seg {Auto} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins bnn_axi_0/S00_AXI]
+Slave segment '/bnn_axi_0/S00_AXI/S00_AXI_reg' is being assigned into address space '/microblaze_0/Data' at <0x44A1_0000 [ 64K ]>.
+save_bd_design
+Wrote  : <C:\Projects\AmbitiousProjects\ILI9341Driver\driverSoC\driverSoC.srcs\sources_1\bd\driverSystem\driverSystem.bd> 
+Wrote  : <C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.srcs/sources_1/bd/driverSystem/ui/bd_d937f0d7.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 5-943] Reserving offset range <0x4000_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A0_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x4060_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A1_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x4000_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A0_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x4060_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A1_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] driverSystem_axi_smc_0: SmartConnect driverSystem_axi_smc_0 is in Ultralite mode.
+INFO: [xilinx.com:ip:microblaze:11.0-9] /microblaze_0: Setting C_BASE_VECTORS to 0x00000000.
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+Wrote  : <C:\Projects\AmbitiousProjects\ILI9341Driver\driverSoC\driverSoC.srcs\sources_1\bd\driverSystem\driverSystem.bd> 
+Verilog Output written to : c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v
+Verilog Output written to : c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/sim/driverSystem.v
+Verilog Output written to : c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/hdl/driverSystem_wrapper.v
+Exporting to file c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/bd_0/hw_handoff/driverSystem_axi_smc_0.hwh
+Generated Hardware Definition File c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/bd_0/synth/driverSystem_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bnn_axi_0 .
+Exporting to file c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/hw_handoff/driverSystem.hwh
+Generated Hardware Definition File c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.hwdef
+INFO: [BD 41-3262] Generated VHDL Instantiation Template file c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/driverSystem.vho
+INFO: [BD 41-3262] Generated Verilog Instantiation Template file c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/driverSystem.veo
+INFO: [BD 41-3262] Generated System Verilog Instantiation Template file c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/driverSystem_sv.sveo
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP driverSystem_axi_smc_0, cache-ID = e7351a38e8a134f9; cache size = 15.622 MB.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3025.113 ; gain = 0.000
+INFO: [Common 17-344] 'launch_runs' was cancelled
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Oct  4 19:34:27 2026] Launched driverSystem_bnn_axi_0_1_synth_1, synth_1...
+Run output will be captured here:
+driverSystem_bnn_axi_0_1_synth_1: C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_bnn_axi_0_1_synth_1/runme.log
+synth_1: C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/runme.log
+[Sun Oct  4 19:34:28 2026] Launched impl_1...
+Run output will be captured here: C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1/runme.log
+ipx::edit_ip_in_project -upgrade true -name bnn_axi_v1_0_project -directory C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.tmp/bnn_axi_v1_0_project c:/Projects/ip_repo/bnn_axi_1_0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/projects/ambitiousprojects/ili9341driver/driversoc/driversoc.tmp/bnn_axi_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3025.113 ; gain = 0.000
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi_slave_lite_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi.v:]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ip_repo'.
+1
+current_project driverSoC
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ip_repo'.
+1
+delete_bd_objs [get_bd_intf_nets axi_smc_M03_AXI] [get_bd_cells bnn_axi_0]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi_slave_lite_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi.v:]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:bnn_axi:1.0 bnn_axi_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/bnn_axi_0/S00_AXI} ddr_seg {Auto} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins bnn_axi_0/S00_AXI]
+Slave segment '/bnn_axi_0/S00_AXI/S00_AXI_reg' is being assigned into address space '/microblaze_0/Data' at <0x44A1_0000 [ 64K ]>.
+save_bd_design
+Wrote  : <C:\Projects\AmbitiousProjects\ILI9341Driver\driverSoC\driverSoC.srcs\sources_1\bd\driverSystem\driverSystem.bd> 
+Wrote  : <C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.srcs/sources_1/bd/driverSystem/ui/bd_d937f0d7.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 5-943] Reserving offset range <0x4000_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A0_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x4060_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A1_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x4000_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A0_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x4060_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A1_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] driverSystem_axi_smc_0: SmartConnect driverSystem_axi_smc_0 is in Ultralite mode.
+INFO: [xilinx.com:ip:microblaze:11.0-9] /microblaze_0: Setting C_BASE_VECTORS to 0x00000000.
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+Wrote  : <C:\Projects\AmbitiousProjects\ILI9341Driver\driverSoC\driverSoC.srcs\sources_1\bd\driverSystem\driverSystem.bd> 
+Verilog Output written to : c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.v
+Verilog Output written to : c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/sim/driverSystem.v
+Verilog Output written to : c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/hdl/driverSystem_wrapper.v
+Exporting to file c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/bd_0/hw_handoff/driverSystem_axi_smc_0.hwh
+Generated Hardware Definition File c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/bd_0/synth/driverSystem_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bnn_axi_0 .
+Exporting to file c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/hw_handoff/driverSystem.hwh
+Generated Hardware Definition File c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/synth/driverSystem.hwdef
+INFO: [BD 41-3262] Generated VHDL Instantiation Template file c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/driverSystem.vho
+INFO: [BD 41-3262] Generated Verilog Instantiation Template file c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/driverSystem.veo
+INFO: [BD 41-3262] Generated System Verilog Instantiation Template file c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/driverSystem_sv.sveo
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi_slave_lite_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi_slave_lite_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi_slave_lite_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi_slave_lite_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi_slave_lite_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi_slave_lite_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi_slave_lite_v1_0_S00_AXI.v:]
+[Sun Oct  4 19:40:48 2026] Launched driverSystem_axi_smc_0_synth_1, driverSystem_bnn_axi_0_2_synth_1, synth_1...
+Run output will be captured here:
+driverSystem_axi_smc_0_synth_1: C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_axi_smc_0_synth_1/runme.log
+driverSystem_bnn_axi_0_2_synth_1: C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/driverSystem_bnn_axi_0_2_synth_1/runme.log
+synth_1: C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/synth_1/runme.log
+[Sun Oct  4 19:40:49 2026] Launched impl_1...
+Run output will be captured here: C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 3025.113 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi_slave_lite_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi_slave_lite_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Projects\ip_repo\bnn_axi_1_0\hdl\bnn_axi.v:]

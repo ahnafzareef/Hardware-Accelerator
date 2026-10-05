@@ -1,0 +1,4 @@
+set_property SRC_FILE_INFO {cfile:c:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/bd_0/ip/ip_0/bd_8f8c_sc_ul_0_cdc.xdc rfile:../../../driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_axi_smc_0/bd_0/ip/ip_0/bd_8f8c_sc_ul_0_cdc.xdc id:1 order:EARLY scoped_inst:inst/sc_ul/inst} [current_design]
+current_instance inst/sc_ul/inst
+set_property src_info {type:SCOPED_XDC file:1 line:24 export:INPUT save:INPUT read:READ} [current_design]
+create_waiver -type CDC -id {CDC-11} -user "axi_switch" -desc "AXI Switch resets contain known-good CDC paths" -tags "1171415" -scope -internal -from [get_pins -quiet -filter REF_PIN_NAME=~*C -of_objects [get_cells -hierarchical -filter {NAME =~ *gen_axi_full_nxm.sasd_inst/gen_write.m_wdata_reg*}]]

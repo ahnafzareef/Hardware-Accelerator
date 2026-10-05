@@ -1,0 +1,54 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "driverSystem_xlslice_1_1",
+    "cell_name": "xlslice_1",
+    "component_reference": "xilinx.com:ip:xlslice:1.0",
+    "ip_revision": "5",
+    "gen_directory": "../../../../../../driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_xlslice_1_1",
+    "parameters": {
+      "component_parameters": {
+        "Component_Name": [ { "value": "driverSystem_xlslice_1_1", "resolve_type": "user", "usage": "all" } ],
+        "DIN_TO": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "DIN_FROM": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "DIN_WIDTH": [ { "value": "3", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "DOUT_WIDTH": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "DIN_WIDTH": [ { "value": "3", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "DIN_FROM": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "DIN_TO": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "spartan7", "resolve_type": "generated", "usage": "all" } ],
+        "BASE_BOARD_PART": [ { "value": "digilentinc.com:arty-s7-25:part0:1.1", "resolve_type": "generated", "usage": "all" } ],
+        "BOARD_CONNECTIONS": [ { "value": "", "resolve_type": "generated", "usage": "all" } ],
+        "DEVICE": [ { "value": "xc7s25", "resolve_type": "generated", "usage": "all" } ],
+        "PACKAGE": [ { "value": "csga324", "resolve_type": "generated", "usage": "all" } ],
+        "PREFHDL": [ { "value": "VERILOG", "resolve_type": "generated", "usage": "all" } ],
+        "SILICON_REVISION": [ { "value": "", "resolve_type": "generated", "usage": "all" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED", "resolve_type": "generated", "usage": "all" } ],
+        "SPEEDGRADE": [ { "value": "-1", "resolve_type": "generated", "usage": "all" } ],
+        "STATIC_POWER": [ { "value": "", "resolve_type": "generated", "usage": "all" } ],
+        "TEMPERATURE_GRADE": [ { "value": "", "resolve_type": "generated", "usage": "all" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "5" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../driverSoC.gen/sources_1/bd/driverSystem/ip/driverSystem_xlslice_1_1" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2026.1" } ],
+        "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "Din": [ { "direction": "in", "size_left": "2", "size_right": "0" } ],
+        "Dout": [ { "direction": "out", "size_left": "0", "size_right": "0" } ]
+      }
+    }
+  },
+  "checksum": "24bf515a"
+}

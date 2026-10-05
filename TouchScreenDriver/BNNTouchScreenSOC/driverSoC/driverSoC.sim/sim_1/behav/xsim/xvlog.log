@@ -1,0 +1,25 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/ip/driverSystem_axi_smc_0/bd_0/ip/ip_0/sim/bd_8f8c_sc_ul_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_8f8c_sc_ul_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/ip/driverSystem_axi_smc_0/bd_0/sim/bd_8f8c.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_8f8c
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/ip/driverSystem_axi_smc_0/sim/driverSystem_axi_smc_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module driverSystem_axi_smc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module driverSystem_clk_wiz_1_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/ip/driverSystem_clk_wiz_1_0/driverSystem_clk_wiz_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module driverSystem_clk_wiz_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/ip/driverSystem_lmb_bram_0/sim/driverSystem_lmb_bram_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module driverSystem_lmb_bram_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/ip/driverSystem_xlslice_0_0/sim/driverSystem_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module driverSystem_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/ip/driverSystem_xlslice_1_1/sim/driverSystem_xlslice_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module driverSystem_xlslice_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/ip/driverSystem_xlslice_2_0/sim/driverSystem_xlslice_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module driverSystem_xlslice_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/sim/driverSystem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module driverSystem
+INFO: [VRFC 10-311] analyzing module microblaze_0_local_memory_imp_14XAS9O
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.gen/sources_1/bd/driverSystem/hdl/driverSystem_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module driverSystem_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

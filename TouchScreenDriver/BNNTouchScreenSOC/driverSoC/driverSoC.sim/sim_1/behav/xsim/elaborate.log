@@ -1,0 +1,16 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L proc_sys_reset_v5_0_17 -L dist_mem_gen_v8_0_17 -L axi_lite_ipif_v3_1_0 -L interrupt_control_v3_2_0 -L axi_quad_spi_v3_2_36 -L microblaze_v11_0_17 -L axi_gpio_v2_0_38 -L mdm_v3_2_30 -L smartconnect_v1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_37 -L axi_vip_v1_1_23 -L lmb_v10_v3_0_16 -L lmb_bram_if_cntlr_v4_0_28 -L blk_mem_gen_v8_4_13 -L xlslice_v1_0_5 -L axi_uartlite_v2_0_40 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot driverSystem_wrapper_behav xil_defaultlib.driverSystem_wrapper xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'io0_t' is not connected on this instance [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/sim/driverSystem.v:180]
+WARNING: [VRFC 10-5021] port 'interrupt' is not connected on this instance [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/sim/driverSystem.v:281]
+WARNING: [VRFC 10-5021] port 'interrupt_ack' is not connected on this instance [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/sim/driverSystem.v:319]
+WARNING: [VRFC 10-5021] port 'peripheral_reset' is not connected on this instance [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/sim/driverSystem.v:395]
+WARNING: [VRFC 10-5021] port 'lmb_rst' is not connected on this instance [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/sim/driverSystem.v:540]
+WARNING: [VRFC 10-5021] port 'lmb_rst' is not connected on this instance [C:/Projects/AmbitiousProjects/ILI9341Driver/driverSoC/driverSoC.ip_user_files/bd/driverSystem/sim/driverSystem.v:586]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis

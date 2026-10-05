@@ -1,0 +1,4 @@
+domain_path: C:/VitisProjects/ILI9341Driver/bnnPlatform/export/bnnPlatform/sw/standalone_microblaze_0
+app_src_dir: C:\AMDDesignTools\2026.1\Vitis\data\embeddedsw\lib\sw_apps\empty_application
+template: empty_application
+lang: c

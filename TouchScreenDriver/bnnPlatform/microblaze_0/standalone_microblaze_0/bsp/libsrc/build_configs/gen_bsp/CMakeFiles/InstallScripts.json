@@ -1,0 +1,20 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/cmake_install.cmake",
+		"C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/cmake_install.cmake",
+		"C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/common/cmake_install.cmake",
+		"C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/common/intr/cmake_install.cmake",
+		"C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/microblaze/cmake_install.cmake",
+		"C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/cmake_install.cmake",
+		"C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/bram/src/cmake_install.cmake",
+		"C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/common/src/cmake_install.cmake",
+		"C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src/cmake_install.cmake",
+		"C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/spi/src/cmake_install.cmake",
+		"C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartlite/src/cmake_install.cmake",
+		"C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/cmake_install.cmake",
+		"C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/cmake_install.cmake",
+		"C:/VitisProjects/ILI9341Driver/bnnPlatform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
