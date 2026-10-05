@@ -72,26 +72,26 @@ flowchart LR
 
 ---
 
-I was going to make these into fancy diagrams, but for transparency, here's what I drew out to help me.
+I was going to make these into fancy diagrams, but for transparency, here's what I drew out to help me. I hope it helps you see my thought process. All my notes are even added to this repository
 
 ## Hardware Design
 
 ### Neuron
 
-![neuron](<img width="1262" height="468" alt="image" src="https://github.com/user-attachments/assets/a18a1f31-81a8-450f-8662-78925607f3b6" />)
+![neuron](<<img width="1278" height="462" alt="image" src="https://github.com/user-attachments/assets/b39077d4-2951-4e36-90cc-da71c4fa56b8" />
+)
 
 <!-- XNOR 64 bits -> popcount -> accumulate. clear / en control. -->
 
 ### Layer
 
-![layer](<img width="1034" height="740" alt="image" src="https://github.com/user-attachments/assets/f805055b-37a8-4f17-897a-99996b952bbd" />
-)
+![layer](<img width="1070" height="764" alt="image" src="https://github.com/user-attachments/assets/f5140194-b181-4e51-8b68-fdaabfb5e624" />)
 
 <!-- Chunk counter, neuron counter, input mux, weight BRAM, delay FFs, threshold compare -->
 
 ### Layer FSM
 
-![fsm](docs/layer_fsm.png)
+![fsm](<img width="722" height="692" alt="image" src="https://github.com/user-attachments/assets/2d4afc3d-fc54-42e2-b7e3-05bc6823fed4" />)
 
 | State | Does |
 |---|---|
