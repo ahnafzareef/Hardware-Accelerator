@@ -65,7 +65,8 @@ flowchart LR
 
 ##State Machine FSM
 <img width="724" height="680" alt="image" src="https://github.com/user-attachments/assets/a51cc392-c3f8-4415-b55e-157de552ebd4" />
-![Uploading image.png…]()
+<img width="1026" height="748" alt="image" src="https://github.com/user-attachments/assets/46fc236d-8b77-4efb-bafa-d99a0ebc8ce7" />
+
 
 ---
 
