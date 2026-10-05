@@ -49,7 +49,15 @@ This means that the neuron now compares 64 input bits at every clock cycle. So o
 
 ## System Architecture
 
-![system](docs/system_diagram.png)
+```mermaid
+flowchart LR
+    T[Touchscreen<br/>ILI9341 + XPT2046] <-->|SPI / GPIO| MB[MicroBlaze<br/>C app]
+    MB <-->|AXI4-Lite| SC[AXI SmartConnect]
+    SC <--> BNN[bnn_axi<br/>registers]
+    BNN --> CORE[bnn_core<br/>3 layers + weight BRAM]
+    CORE --> BNN
+    SC <--> UART[AXI UART Lite<br/>debug]
+```
 
 <!-- 2-3 sentences: touchscreen -> MicroBlaze (C app) -> AXI4-Lite -> bnn_axi -> bnn_core -> result -->
 
