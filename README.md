@@ -47,7 +47,9 @@ This means that the neuron now compares 64 input bits at every clock cycle. So o
 
 ---
 
-## System Architecture
+## System Architecture and my Diagram Drawings
+
+Here's the general System Architecture and all the Diagrams I doodled on my way to making this. 
 
 ```mermaid
 flowchart LR
@@ -58,8 +60,12 @@ flowchart LR
     CORE --> BNN
     SC <--> UART[AXI UART Lite<br/>debug]
 ```
+### Neuron Block Diagram
+<img width="1270" height="458" alt="image" src="https://github.com/user-attachments/assets/d34b5973-5290-4bf9-8648-ab4f6e0b31f5" />
 
-<!-- 2-3 sentences: touchscreen -> MicroBlaze (C app) -> AXI4-Lite -> bnn_axi -> bnn_core -> result -->
+##State Machine FSM
+<img width="724" height="680" alt="image" src="https://github.com/user-attachments/assets/a51cc392-c3f8-4415-b55e-157de552ebd4" />
+![Uploading image.png…]()
 
 ---
 
