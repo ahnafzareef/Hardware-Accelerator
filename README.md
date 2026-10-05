@@ -155,6 +155,21 @@ Because `ARGMAX` is a constant, Vivado only builds the branch each instance uses
 
 ---
 
+
+## Brief Implementation Details
+
+Briefly going over how I implemented the main parts of the accelerator:
+
+- **Neuron:** XNOR of a 64-bit input chunk with a 64-bit weight chunk, then a popcount (`$countones`, synthesized as an adder tree) to count matches, then accumulated into a 10-bit register. `clear` and `en` pick between reset / add / hold. Kept it as its own module so all three layers reuse the exact same datapath.
+- **Layer FSM:** IDLE → LOAD → CLEAR → RUN → WAIT → CHECK. RUN feeds one chunk per clock using a chunk counter and a neuron counter. The tricky part was **latency matching**: the BRAM read takes 1 clock, so the input chunk and `en` go through a 1-clock delay FF to line up with the weights, and the WAIT state lets the last chunk get counted before CHECK reads it.
+- **Weight ROM:** Followed AMD's UG901 (Ch. 4, ROM HDL Coding Techniques, `rams_sp_rom` example) to get Vivado to infer block RAM instead of LUTs: clocked read in `always_ff`, `(* rom_style = "block" *)`, and preloaded with `$readmemb` so the weights get baked into the bitstream. Rows are 64 bits wide (`row = neuron × CHUNKS + chunk`), and the padding in layer 1's last chunk is set to 1 so `XNOR(0,1)` never counts as a match.
+- **One module, three layers:** `layer.sv` is parameterized (`INPUTS_I`, `WIDTH_O`, `ARGMAX`) and every width is derived from those. Layer 3 flips `ARGMAX` to keep the highest count instead of thresholding. Since it's a constant, Vivado prunes the unused branch per instance.
+- **AXI4-Lite wrapper:** Used Vivado's AXI4 peripheral template for the handshake logic and replaced its register bank with my own map (CTRL / STATUS / RESULT / 25 image words). A write to CTRL becomes a 1-clock `start` pulse, and `done` is latched into a sticky bit since the CPU would miss a 1-clock pulse. Ran into a packaging gotcha where the IP's saved address width stayed at 4 bits even after changing the HDL, which I fixed by editing `component.xml`.
+- **Reset / start:** Button reset is double-flopped to avoid metastability, and a one-shot start pulse fires after power-up for the standalone board test.
+- **Software side (AI-assisted):** The weight export script and the MicroBlaze touch app were written with AI help. The app reuses my [ILI9341 driver](https://github.com/ahnafzareef/ILI9341Driver), centers the drawn digit, packs it into 25 words, and talks to the accelerator over AXI.
+
+---
+
 ## AXI4-Lite Interface
 
 | Offset | Name | Access | Description |
