@@ -121,6 +121,8 @@ I was going to make these into fancy diagrams, but for transparency, here's what
 
 ### Weight Memory Layout
 
+For the RAM I followed the AMD guidelines for single port ROM.
+
 Each layer stores its weights in its own block RAM as **64-bit rows**. One row holds one neuron's weights for 64 consecutive inputs, so a neuron's weights take `CHUNKS` rows back to back:
 
 ```
