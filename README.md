@@ -186,10 +186,6 @@ Because `ARGMAX` is a constant, Vivado only builds the branch each instance uses
 | Failing endpoints | 0 |
 <!-- your timing paragraph -->
 
-### Latency
-
-<!-- ~60 us per inference -->
-
 ---
 
 ## Build & Run
