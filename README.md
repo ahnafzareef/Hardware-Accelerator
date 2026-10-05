@@ -115,11 +115,35 @@ I was going to make these into fancy diagrams, but for transparency, here's what
 
 ### Weight Memory Layout
 
-<!-- row = neuron * CHUNKS + chunk ; 64-bit rows ; padding bits = 1 -->
+Each layer stores its weights in its own block RAM as **64-bit rows**. One row holds one neuron's weights for 64 consecutive inputs, so a neuron's weights take `CHUNKS` rows back to back:
+
+```
+row = neuron × CHUNKS + chunk
+```
+
+| Layer | Inputs | CHUNKS | Neurons | Rows |
+|---|---|---|---|---|
+| 1 | 784 | 13 | 256 | 3,328 |
+| 2 | 256 | 4 | 256 | 1,024 |
+| 3 | 256 | 4 | 10 | 40 |
+
+784 doesn't divide evenly by 64, so layer 1's last chunk holds 16 real inputs plus 48 padding bits. The input padding is `0` and the weight padding is `1`, so `XNOR(0, 1) = 0` and padding never counts as a match.
+
+The BRAM read takes 1 clock, so the input chunk and the `en` signal pass through a 1-clock delay register to arrive at the neuron at the same time as the weights.
 
 ### One Module, Three Layers
 
-<!-- INPUTS_I, WIDTH_O, ARGMAX parameters; Vivado prunes unused logic per instance -->
+All three layers are the same `layer.sv` module, configured per instance with parameters:
+
+| Parameter | Layer 1 | Layer 2 | Layer 3 |
+|---|---|---|---|
+| `INPUTS_I` | 784 | 256 | 256 |
+| `WIDTH_O` | 256 | 256 | 10 |
+| `ARGMAX` | 0 | 0 | 1 |
+
+Every width (counters, address, count, input register) is derived from these parameters, so each instance is sized exactly for its layer. `ARGMAX` switches the decision step: layers 1–2 compare each neuron's count to its threshold and output a bit, while layer 3 keeps the highest count and outputs the winning neuron's index as the digit.
+
+Because `ARGMAX` is a constant, Vivado only builds the branch each instance uses: the argmax registers are removed from layers 1–2, and the threshold memory is removed from layer 3.
 
 ---
 
