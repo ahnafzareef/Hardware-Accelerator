@@ -11,6 +11,11 @@
 **Board:** Digilent Arty S7-25 (`xc7s25csga324-1`)
 **Display:** 2.8" ILI9341 SPI TFT + XPT2046 touch ([driver](https://github.com/ahnafzareef/ILI9341Driver))
 
+### DEMO VIDEO!!!
+
+
+
+
 ### v1 → v2
 
 This is Version 2 of my BNN hardware accelerator. The ([XNOR-9](https://github.com/ahnafzareef/XNOR-9)) which was the first iteration was
