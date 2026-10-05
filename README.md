@@ -215,6 +215,7 @@ AI was used to:
   for the BRAM otherwise obviously it wouldn't work.
 - Help me write `TouchScreenDriver/bnn_touch/src/main.c` by taking my driver and showing me how to wire it up. 
 - Learning about how AXI even works and also how BRAM works, also did AI reading through UG1037, UG109 and UG473 for User Guides on determining how to 1. make a BRAM module, AXI4 IP and more.
+- I also used it to take my (very loosely written) readme and turn it into some of the stuff you see in this readme!
 ---
 
 ## Future Work
