@@ -70,9 +70,33 @@ endtask
 
 initial begin
 
-    
+    logic [63:0] x;
 
+    //Cases
+    step(1,0,0,0); // clear, count is 0 hopefully
+    x = {$urandom, $urandom}; //random is 32 bit int
+    step(0,1,x,x); //both same so 64
+    step(0,1,x,~x); // both should be diff all ways so stay at 64
+    step(0,0,x,x); //enable is low so stay at 64
+    step(1,0,x,x); //clear is set so set to 0;
 
+    //random cases but diff in and w
+    repeat (12) begin
+        x = {$urandom, $urandom};
+        step(0,1,x,x);
+    end
+
+    x = {$urandom, $urandom};
+    step(0, 1, x, x ^ {48'hFFFF_FFFF_FFFF, 16'h0});   // 1111...1111 00000000000, 48 ones and 16 zeroes, flip whever 1 and not where 0, so 16 matches
+    $display("count after max test = %0d (is 784)", count);
+
+    //fully random cases
+
+    repeat (200) begin
+        step(1, 0, '0, '0);
+        repeat (13)
+            step($urandom % 10 == 0, $urandom % 2, {$urandom, $urandom}, {$urandom, $urandom});
+    end
 
 
     if (errors == 0) $display("No Errors!");
