@@ -91,13 +91,11 @@ initial begin
     $display("count after max test = %0d (is 784)", count);
 
     //fully random cases
-
     repeat (200) begin
         step(1, 0, '0, '0);
         repeat (13)
             step($urandom % 10 == 0, $urandom % 2, {$urandom, $urandom}, {$urandom, $urandom});
     end
-
 
     if (errors == 0) $display("No Errors!");
     else $display("There are %0d errors", errors);
